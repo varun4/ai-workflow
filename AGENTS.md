@@ -86,6 +86,16 @@ Primary operating files (use these first):
 - `slides-outline.md`, `exercise.md`, and `facilitator-notes.md` should stay
   aligned with the lesson content.
 
+## Module Output Rule
+- Every module must produce concrete updates to both track workflows:
+  `examples/developers/rbac-admin-workflow/` and
+  `examples/knowledge-workers/vendor-selection-workflow/`.
+- For each module, update the relevant workflow artifacts, record deltas
+  in each track's `MODULE_UPDATES.md`, and log completion in
+  `PROGRESS.md`.
+- A module is not complete until both track workflows reflect the module
+  concept with validated, traceable changes.
+
 ## Template And Example Rules
 
 - Templates should be short, fillable, and immediately reusable.

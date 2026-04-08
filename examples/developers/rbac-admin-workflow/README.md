@@ -26,6 +26,14 @@ delivery using:
 5. Verify completion with `EVAL_CHECKLIST.md`.
 6. Stop at `APPROVAL_BOUNDARIES.md` checkpoints.
 
+## Module Deltas
+
+- Module summary log: `MODULE_UPDATES.md`
+- Detailed deltas:
+  - `deltas/module-01.md`
+  - `deltas/module-02.md`
+  - `deltas/module-03.md`
+
 ## Learning Goal
 
 Show how the same operating model used for course modules can be

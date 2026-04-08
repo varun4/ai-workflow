@@ -29,6 +29,16 @@ knowledge workers.
 - Artifacts are reusable and internally consistent.
 - Validation is run and reported before completion.
 
+### Module Output Rule
+- Every module must produce concrete updates to both track workflows:
+  `examples/developers/rbac-admin-workflow/` and
+  `examples/knowledge-workers/vendor-selection-workflow/`.
+- For each module, update the relevant workflow artifacts, record deltas
+  in each track's `MODULE_UPDATES.md`, and log completion in
+  `PROGRESS.md`.
+- A module is not complete until both track workflows reflect the module
+  concept with validated, traceable changes.
+
 ## Validation
 
 - Approved markdown checks on changed files.

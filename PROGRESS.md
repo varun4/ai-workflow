@@ -204,3 +204,58 @@
 
 - Next step: draft module 03 content with the same anchor examples,
   then align examples and exercises to module learning outcomes
+
+## 2026-04-08 - Step 12: Draft module 03 specification precision
+
+- Files changed:
+  - `course/modules/03-specification-precision/lesson.md`
+  - `course/modules/03-specification-precision/slides-outline.md`
+  - `course/modules/03-specification-precision/exercise.md`
+  - `course/modules/03-specification-precision/facilitator-notes.md`
+  - `README.md`
+  - `PROGRESS.md`
+- Status: completed
+
+- Validation run:
+  `pymarkdown scan "course/modules/03-specification-precision/lesson.md"
+  "course/modules/03-specification-precision/slides-outline.md"
+  "course/modules/03-specification-precision/exercise.md"
+  "course/modules/03-specification-precision/facilitator-notes.md"
+  "README.md" "PROGRESS.md"`
+
+- Next step: align module 03 examples with new workflow artifact bundles
+  and draft module 04 scope decomposition
+
+## 2026-04-08 - Step 13: Add module delta logs for both tracks
+
+- Files changed:
+  - `examples/developers/rbac-admin-workflow/MODULE_UPDATES.md`
+  - `examples/developers/rbac-admin-workflow/deltas/module-01.md`
+  - `examples/developers/rbac-admin-workflow/deltas/module-02.md`
+  - `examples/developers/rbac-admin-workflow/deltas/module-03.md`
+  - `examples/developers/rbac-admin-workflow/README.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/MODULE_UPDATES.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/deltas/module-01.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/deltas/module-02.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/deltas/module-03.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/README.md`
+  - `README.md`
+  - `PROGRESS.md`
+- Status: completed
+
+- Validation run:
+  `pymarkdown scan
+  "examples/developers/rbac-admin-workflow/MODULE_UPDATES.md"
+  "examples/developers/rbac-admin-workflow/deltas/module-01.md"
+  "examples/developers/rbac-admin-workflow/deltas/module-02.md"
+  "examples/developers/rbac-admin-workflow/deltas/module-03.md"
+  "examples/developers/rbac-admin-workflow/README.md"
+  "examples/knowledge-workers/vendor-selection-workflow/MODULE_UPDATES.md"
+  "examples/knowledge-workers/vendor-selection-workflow/deltas/module-01.md"
+  "examples/knowledge-workers/vendor-selection-workflow/deltas/module-02.md"
+  "examples/knowledge-workers/vendor-selection-workflow/deltas/module-03.md"
+  "examples/knowledge-workers/vendor-selection-workflow/README.md"
+  "README.md" "PROGRESS.md"`
+
+- Next step: connect module outputs to module 04 planning and update both
+  workflow artifacts after each module increment

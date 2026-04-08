@@ -73,6 +73,12 @@ flowchart LR
 - `sessions/`: workshop formats and delivery plans
 - `PROGRESS.md`: append-only execution log for repository development
 
+Track-level module deltas:
+
+- Developer workflow deltas: `examples/developers/rbac-admin-workflow/deltas/`
+- Knowledge-work deltas:
+  `examples/knowledge-workers/vendor-selection-workflow/deltas/`
+
 ## Project Operating Artifacts
 
 - `SPEC.md`: current project objective, scope, constraints, and success
@@ -91,7 +97,8 @@ flowchart LR
 3. Read the reliability docs in `docs/reliability/`
 4. Read the governance docs in `docs/governance/`
 5. Work through `course/modules/01-introduction/` and
-   `course/modules/02-workflow-operating-system/`
+   `course/modules/02-workflow-operating-system/` and
+   `course/modules/03-specification-precision/`
 6. Adapt the templates in `templates/` for your own workflow
 7. Use the examples in `examples/` as reference implementations
 

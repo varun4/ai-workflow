@@ -26,6 +26,14 @@ work using:
 5. Validate recommendation quality with `EVAL_CHECKLIST.md`.
 6. Stop at `APPROVAL_BOUNDARIES.md` checkpoints.
 
+## Module Deltas
+
+- Module summary log: `MODULE_UPDATES.md`
+- Detailed deltas:
+  - `deltas/module-01.md`
+  - `deltas/module-02.md`
+  - `deltas/module-03.md`
+
 ## Learning Goal
 
 Show that the same operating model used for engineering work also
