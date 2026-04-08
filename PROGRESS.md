@@ -259,3 +259,16 @@
 
 - Next step: connect module outputs to module 04 planning and update both
   workflow artifacts after each module increment
+
+## 2026-04-08 - Step 14: Add clickable README path links
+
+- Files changed:
+  - `README.md`
+  - `PROGRESS.md`
+- Status: completed
+
+- Validation run:
+  `pymarkdown scan "README.md" "PROGRESS.md"`
+
+- Next step: continue module 04 draft and keep path references linked in
+  new README updates

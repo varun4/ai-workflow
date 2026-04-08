@@ -32,7 +32,8 @@ This project teaches a more durable approach:
 
 ## What You Will Learn
 
-- How to use `AGENTS.md`, `PROGRESS.md`, specs, and skills as workflow
+- How to use [`AGENTS.md`](AGENTS.md),
+  [`PROGRESS.md`](PROGRESS.md), specs, and skills as workflow
   primitives
 - How to improve reliability through specification precision, scope
   decomposition, and context architecture
@@ -61,46 +62,58 @@ flowchart LR
 
 ## Repository Structure
 
-- `docs/`: canonical reference for the framework
-- `course/`: lesson material, slide outlines, exercises, and
+- [`docs/`](docs/): canonical reference for the framework
+- [`course/`](course/): lesson material, slide outlines, exercises, and
   facilitator notes
-- `tracks/`: audience-specific guidance for developers and knowledge
+- [`tracks/`](tracks/): audience-specific guidance for developers and
   workers
-- `templates/`: reusable artifacts split into shared, developer, and
+- [`templates/`](templates/): reusable artifacts split into shared,
+  developer, and
   knowledge-worker templates
-- `examples/`: end-to-end case studies
-- `skills/`: reusable workflow skills and a shared index
-- `sessions/`: workshop formats and delivery plans
-- `PROGRESS.md`: append-only execution log for repository development
+- [`examples/`](examples/): end-to-end case studies
+- [`skills/`](skills/): reusable workflow skills and a shared index
+- [`sessions/`](sessions/): workshop formats and delivery plans
+- [`PROGRESS.md`](PROGRESS.md): append-only execution log for repository
+  development
 
 Track-level module deltas:
 
-- Developer workflow deltas: `examples/developers/rbac-admin-workflow/deltas/`
+- Developer workflow deltas:
+  [`examples/developers/rbac-admin-workflow/deltas/`](examples/developers/rbac-admin-workflow/deltas/)
 - Knowledge-work deltas:
-  `examples/knowledge-workers/vendor-selection-workflow/deltas/`
+  [`examples/knowledge-workers/vendor-selection-workflow/deltas/`](examples/knowledge-workers/vendor-selection-workflow/deltas/)
 
 ## Project Operating Artifacts
 
-- `SPEC.md`: current project objective, scope, constraints, and success
+- [`SPEC.md`](SPEC.md): current project objective, scope, constraints,
+  and success
   criteria
-- `SKILL_EVIDENCE_REVIEW.md`: reusable review skill for definition and
+- [`SKILL_EVIDENCE_REVIEW.md`](SKILL_EVIDENCE_REVIEW.md): reusable
+  review skill for definition and
   evidence quality
-- `EVAL_CHECKLIST.md`: project completion checklist
-- `APPROVAL_BOUNDARIES.md`: ask-first and approval gate actions
+- [`EVAL_CHECKLIST.md`](EVAL_CHECKLIST.md): project completion checklist
+- [`APPROVAL_BOUNDARIES.md`](APPROVAL_BOUNDARIES.md): ask-first and
+  approval gate actions
 
 ## Start Here
 
-1. Read `docs/foundations/operating-model.md`
-2. Read `docs/primitives/agents-md.md`,
-   `docs/primitives/progress-md.md`, `docs/primitives/skills.md`, and
-   `docs/primitives/specs.md`
-3. Read the reliability docs in `docs/reliability/`
-4. Read the governance docs in `docs/governance/`
-5. Work through `course/modules/01-introduction/` and
-   `course/modules/02-workflow-operating-system/` and
-   `course/modules/03-specification-precision/`
-6. Adapt the templates in `templates/` for your own workflow
-7. Use the examples in `examples/` as reference implementations
+1. Read
+   [`docs/foundations/operating-model.md`](docs/foundations/operating-model.md)
+2. Read
+   [`docs/primitives/agents-md.md`](docs/primitives/agents-md.md),
+   [`docs/primitives/progress-md.md`](docs/primitives/progress-md.md),
+   [`docs/primitives/skills.md`](docs/primitives/skills.md), and
+   [`docs/primitives/specs.md`](docs/primitives/specs.md)
+3. Read the reliability docs in [`docs/reliability/`](docs/reliability/)
+4. Read the governance docs in [`docs/governance/`](docs/governance/)
+5. Work through [`course/modules/01-introduction/`](course/modules/01-introduction/),
+   [`course/modules/02-workflow-operating-system/`](course/modules/02-workflow-operating-system/),
+   and
+   [`course/modules/03-specification-precision/`](course/modules/03-specification-precision/)
+6. Adapt the templates in [`templates/`](templates/) for your own
+   workflow
+7. Use the examples in [`examples/`](examples/) as reference
+   implementations
 
 ## Course Design Standard
 
@@ -127,8 +140,9 @@ The framework is shared, but the application differs by audience.
 - Knowledge workers: research briefs, writing workflows, meeting
   outputs, operational processes, review loops
 
-The split happens mainly in `tracks/`, `templates/`, and `examples/`,
-while the core concepts remain shared in `docs/`.
+The split happens mainly in [`tracks/`](tracks/),
+[`templates/`](templates/), and [`examples/`](examples/), while the
+core concepts remain shared in [`docs/`](docs/).
 
 ## Current Status
 
@@ -153,7 +167,8 @@ adapt a template to one real workflow you own.
 
 ### If you want to teach the system
 
-Use the content in `course/` and `sessions/` as your base, then turn
+Use the content in [`course/`](course/) and [`sessions/`](sessions/) as
+your base, then turn
 the slide outlines into presentation decks and adapt exercises for your
 audience.
 
@@ -161,18 +176,19 @@ audience.
 
 Start with:
 
-- `templates/shared/AGENTS.example.md`
-- `templates/shared/PROGRESS.example.md`
-- `templates/shared/SPEC.example.md`
+- [`templates/shared/AGENTS.example.md`](templates/shared/AGENTS.example.md)
+- [`templates/shared/PROGRESS.example.md`](templates/shared/PROGRESS.example.md)
+- [`templates/shared/SPEC.example.md`](templates/shared/SPEC.example.md)
 
 Then move into the audience-specific templates that match your work.
 
 ## Roadmap
 
 - Expand the developer and knowledge-worker template packs
-- Build out the remaining modules in `course/modules/`
+- Build out the remaining modules in
+  [`course/modules/`](course/modules/)
 - Add deeper end-to-end case studies
-- Add reusable skills to `skills/`
+- Add reusable skills to [`skills/`](skills/)
 - Package the material into workshop and session sequences
 
 ## Working Principles
@@ -185,8 +201,11 @@ Then move into the audience-specific templates that match your work.
 
 ## Repository Notes
 
-- `AGENTS.md` defines operating rules for agent sessions in this
+- [`AGENTS.md`](AGENTS.md) defines operating rules for agent sessions in
   repository
-- `PROGRESS.md` is append-only and records major implementation steps
-- Course content under `course/`, `docs/`, `templates/`, `examples/`,
-  `tracks/`, and `sessions/` follows a preview-first review workflow
+- [`PROGRESS.md`](PROGRESS.md) is append-only and records major
+  implementation steps
+- Course content under [`course/`](course/), [`docs/`](docs/),
+  [`templates/`](templates/), [`examples/`](examples/),
+  [`tracks/`](tracks/), and [`sessions/`](sessions/) follows a
+  preview-first review workflow
