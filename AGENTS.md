@@ -84,6 +84,31 @@
 - `slides-outline.md`, `exercise.md`, and `facilitator-notes.md` should stay
   aligned with the lesson content.
 
+## Module Research Rules
+- Before creating or revising any file under `course/modules/`, perform a state-of-the-art research pass and summarize it in-chat for approval first.
+- The research pass must include at least:
+  - one official model-provider source (e.g., OpenAI/Anthropic docs),
+  - one practitioner/implementation source,
+  - one relevant research paper (or equivalent technical publication).
+- The summary must include:
+  - source list with links,
+  - 5-10 actionable patterns,
+  - confidence level for each pattern (official guidance, practitioner evidence, or research evidence),
+  - implications for module content and exercises.
+- Only after explicit user approval may module files be written or updated.
+
+## Definition-First Writing Rule
+- Do not introduce abstract concepts without first defining them in plain language.
+- For every key concept in course content, use this sequence:
+  1. definition (what it is),
+  2. concrete example (from course anchor examples where possible),
+  3. optional metaphor (only after definition and example),
+  4. practical implication (how it changes execution or evaluation).
+- Avoid generic learning objectives such as "understand X" unless they are followed by observable outcomes.
+- Learning objectives must be measurable and action-oriented, using verbs such as define, identify, compare, apply, evaluate, and design.
+- Avoid vague claims and filler terms (e.g., "improve", "better", "high-quality") unless they are tied to explicit criteria.
+- During content review, reject any section that discusses a concept before defining it and grounding it in an example.
+
 ## Template And Example Rules
 
 - Templates should be short, fillable, and immediately reusable.

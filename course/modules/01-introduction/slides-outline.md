@@ -1,9 +1,12 @@
 # Module 01 Slides Outline
 
 1. Why this course exists
-2. The difference between prompting and workflow design
-3. Why most agentic efforts fail
-4. The role of artifacts: `AGENTS.md`, `PROGRESS.md`, specs, skills
-5. Reliability through scope, context, and evaluation
-6. Security and approval boundaries
-7. What learners will build during the course
+2. Define AI workflow
+3. Anchor example (coding): admin endpoint role checks
+4. Anchor example (knowledge work): vendor recommendation brief
+5. Prompting vs workflow design
+6. Why workflows fail
+7. Workflow building blocks (preview)
+8. Metaphor: production line with quality gates
+9. Exercise instructions
+10. Debrief

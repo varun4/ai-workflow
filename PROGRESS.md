@@ -113,3 +113,22 @@
 
 - Next step: update `AGENTS.md` manually to satisfy markdown lint, then
   stage the first public repository snapshot
+
+## 2026-04-08 - Step 9: Rewrite module 01 using definition-first rule
+
+- Files changed:
+  - `course/modules/01-introduction/lesson.md`
+  - `course/modules/01-introduction/slides-outline.md`
+  - `course/modules/01-introduction/exercise.md`
+  - `course/modules/01-introduction/facilitator-notes.md`
+  - `PROGRESS.md`
+- Status: completed
+
+- Validation run:
+  `pymarkdown scan "course/modules/01-introduction/lesson.md"
+  "course/modules/01-introduction/slides-outline.md"
+  "course/modules/01-introduction/exercise.md"
+  "course/modules/01-introduction/facilitator-notes.md"`
+
+- Next step: draft and patch module 02 and module 03 with the same
+  anchor examples and definition-first structure
