@@ -47,3 +47,8 @@ Track how each module changes this workflow in a demonstrable way.
   - Files: `SPEC.md`, `EVAL_CHECKLIST.md`, `README.md`
   - Validation: Pass
   - Delta: `deltas/module-04.md`
+- Module 05
+  - Concept: Context architecture
+  - Files: `SPEC.md`, `EVAL_CHECKLIST.md`, `README.md`
+  - Validation: Pass
+  - Delta: `deltas/module-05.md`

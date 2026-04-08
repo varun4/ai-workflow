@@ -34,6 +34,7 @@ work using:
   - `deltas/module-02.md`
   - `deltas/module-03.md`
   - `deltas/module-04.md`
+  - `deltas/module-05.md`
 
 ## Learning Goal
 

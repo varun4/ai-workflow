@@ -393,3 +393,47 @@
 
 - Next step: use `MODULE_DONE_CHECKLIST.md` as a blocking verification
   artifact during module 05 generation and track updates
+
+## 2026-04-08 - Step 20: Draft module 05 and apply track updates
+
+- Files changed:
+  - `course/modules/05-context-architecture/lesson.md`
+  - `course/modules/05-context-architecture/slides-outline.md`
+  - `course/modules/05-context-architecture/exercise.md`
+  - `course/modules/05-context-architecture/facilitator-notes.md`
+  - `course/modules/05-context-architecture/MODULE_DONE_CHECKLIST.md`
+  - `examples/developers/rbac-admin-workflow/SPEC.md`
+  - `examples/developers/rbac-admin-workflow/EVAL_CHECKLIST.md`
+  - `examples/developers/rbac-admin-workflow/MODULE_UPDATES.md`
+  - `examples/developers/rbac-admin-workflow/README.md`
+  - `examples/developers/rbac-admin-workflow/deltas/module-05.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/SPEC.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/EVAL_CHECKLIST.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/MODULE_UPDATES.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/README.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/deltas/module-05.md`
+  - `README.md`
+  - `PROGRESS.md`
+- Status: completed
+
+- Validation run:
+  `pymarkdown scan
+  "course/modules/05-context-architecture/lesson.md"
+  "course/modules/05-context-architecture/slides-outline.md"
+  "course/modules/05-context-architecture/exercise.md"
+  "course/modules/05-context-architecture/facilitator-notes.md"
+  "course/modules/05-context-architecture/MODULE_DONE_CHECKLIST.md"
+  "examples/developers/rbac-admin-workflow/SPEC.md"
+  "examples/developers/rbac-admin-workflow/EVAL_CHECKLIST.md"
+  "examples/developers/rbac-admin-workflow/MODULE_UPDATES.md"
+  "examples/developers/rbac-admin-workflow/README.md"
+  "examples/developers/rbac-admin-workflow/deltas/module-05.md"
+  "examples/knowledge-workers/vendor-selection-workflow/SPEC.md"
+  "examples/knowledge-workers/vendor-selection-workflow/EVAL_CHECKLIST.md"
+  "examples/knowledge-workers/vendor-selection-workflow/MODULE_UPDATES.md"
+  "examples/knowledge-workers/vendor-selection-workflow/README.md"
+  "examples/knowledge-workers/vendor-selection-workflow/deltas/module-05.md"
+  "README.md" "PROGRESS.md"`
+
+- Next step: draft module 06 skills and reusable capabilities, then
+  apply module output updates for both track workflows

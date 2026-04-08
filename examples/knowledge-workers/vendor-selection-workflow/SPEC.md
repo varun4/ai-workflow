@@ -90,3 +90,35 @@ defined criteria and evidence.
   - recorded approvals
 - Checkpoint:
   - do not distribute without approvals
+
+## Context Architecture (Module 05)
+
+### Required Context
+
+- approved source list
+- scoring rubric and criteria definitions
+- policy constraints on evidence usage
+- output format and approval requirements
+
+### Excluded Context
+
+- non-approved external sources
+- stale drafts with unresolved assumptions
+- notes without source attribution
+
+### Source Precedence
+
+1. approved spec and policy rules
+2. validated evidence sources
+3. recent reviewed scoring artifacts
+
+### Refresh Triggers
+
+- criteria or rubric change
+- source policy update
+- failed evidence traceability validation
+
+### Context Owner
+
+- workflow owner maintains context package per phase
+- stakeholder reviewer confirms context quality before approval

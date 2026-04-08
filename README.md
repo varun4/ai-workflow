@@ -116,6 +116,7 @@ Track-level module deltas:
    2. [`course/modules/02-workflow-operating-system/`](course/modules/02-workflow-operating-system/)
    3. [`course/modules/03-specification-precision/`](course/modules/03-specification-precision/)
    4. [`course/modules/04-scope-decomposition/`](course/modules/04-scope-decomposition/)
+   5. [`course/modules/05-context-architecture/`](course/modules/05-context-architecture/)
 6. Adapt the templates in [`templates/`](templates/) for your own
    workflow
 7. Use the examples in [`examples/`](examples/) as reference

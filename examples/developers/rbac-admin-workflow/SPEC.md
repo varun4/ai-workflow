@@ -79,3 +79,35 @@ authorized roles can perform privileged actions.
   - recorded signoff
 - Checkpoint:
   - stop if signoff is missing
+
+## Context Architecture (Module 05)
+
+### Required Context
+
+- scoped endpoint inventory
+- approved role matrix
+- auth middleware paths
+- acceptance criteria and test commands
+
+### Excluded Context
+
+- non-admin endpoint code
+- deprecated architecture notes
+- outdated exploratory diffs
+
+### Source Precedence
+
+1. approved spec and role matrix
+2. current codebase files in scope
+3. recent validated progress notes
+
+### Refresh Triggers
+
+- endpoint scope change
+- role matrix change
+- failed authorization validation
+
+### Context Owner
+
+- implementation lead maintains phase context package
+- security reviewer confirms context completeness before approval

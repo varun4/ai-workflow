@@ -31,3 +31,10 @@
 - Each phase has one concrete output.
 - Each phase has a checkpoint decision.
 - Escalation conditions are explicit at approval gates.
+
+## Context Quality
+
+- Required context set is complete for current phase.
+- Excluded context set removes non-approved or stale sources.
+- Source precedence is applied when context conflicts.
+- Context refresh triggers are evaluated at each checkpoint.
