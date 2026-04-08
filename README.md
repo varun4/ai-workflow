@@ -94,6 +94,9 @@ Track-level module deltas:
 - [`EVAL_CHECKLIST.md`](EVAL_CHECKLIST.md): project completion checklist
 - [`APPROVAL_BOUNDARIES.md`](APPROVAL_BOUNDARIES.md): ask-first and
   approval gate actions
+- Scope decomposition principles:
+  [`SPEC.md`](SPEC.md) and
+  [`docs/reliability/scope-decomposition.md`](docs/reliability/scope-decomposition.md)
 
 ## Start Here
 
@@ -108,8 +111,9 @@ Track-level module deltas:
 4. Read the governance docs in [`docs/governance/`](docs/governance/)
 5. Work through modules:
    1. [`course/modules/01-introduction/`](course/modules/01-introduction/)
-   2. [`course/modules/02-workflow-operating-system/`](course/modules/02-workflow-operating-system/),
+   2. [`course/modules/02-workflow-operating-system/`](course/modules/02-workflow-operating-system/)
    3. [`course/modules/03-specification-precision/`](course/modules/03-specification-precision/)
+   4. [`course/modules/04-scope-decomposition/`](course/modules/04-scope-decomposition/)
 6. Adapt the templates in [`templates/`](templates/) for your own
    workflow
 7. Use the examples in [`examples/`](examples/) as reference

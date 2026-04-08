@@ -15,6 +15,10 @@
 - Preview-first approval was followed.
 - Definition-first writing was applied.
 - Ask-first boundaries were respected.
+- Scope decomposition principles were applied for multi-step work:
+  - bounded phases and tasks
+  - one output per task
+  - explicit checkpoints and escalation gates
 
 ## Quality
 

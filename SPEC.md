@@ -23,6 +23,15 @@ knowledge workers.
 - Keep shared framework in `docs/` and split by audience mainly in
   `tracks/`, `templates/`, and `examples/`.
 
+### Scope Decomposition Principles
+
+- Separate architecture from implementation.
+- Separate scaffold from content depth.
+- Break work into bounded phases and tasks.
+- Keep one concrete output per task.
+- Insert checkpoints before risky actions.
+- Define escalation and approval gates explicitly.
+
 ## Success Criteria
 
 - Module content is practical, measurable, and aligned with module rules.
@@ -30,6 +39,7 @@ knowledge workers.
 - Validation is run and reported before completion.
 
 ### Module Output Rule
+
 - Every module must produce concrete updates to both track workflows:
   `examples/developers/rbac-admin-workflow/` and
   `examples/knowledge-workers/vendor-selection-workflow/`.

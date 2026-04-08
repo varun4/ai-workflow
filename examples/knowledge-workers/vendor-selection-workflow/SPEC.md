@@ -38,3 +38,55 @@ defined criteria and evidence.
 - Run evidence and citation traceability review.
 - Run bias and completeness checklist.
 - Obtain stakeholder review before distribution.
+
+## Scope Decomposition (Module 04)
+
+### Phase 1: Plan
+
+- Tasks:
+  - confirm decision criteria and scoring rubric
+  - confirm approved source set
+- Output:
+  - criteria and source constraints note
+- Checkpoint:
+  - approve criteria before evidence collection
+
+### Phase 2: Analyze
+
+- Tasks:
+  - collect evidence for each vendor
+  - score vendors against rubric
+- Output:
+  - scored vendor comparison matrix
+- Checkpoint:
+  - verify all vendors have complete evidence coverage
+
+### Phase 3: Draft
+
+- Tasks:
+  - produce recommendation narrative
+  - state tradeoffs and assumptions
+- Output:
+  - recommendation brief draft
+- Checkpoint:
+  - confirm recommendation aligns with matrix
+
+### Phase 4: Validate
+
+- Tasks:
+  - run evidence traceability review
+  - run bias and completeness checks
+- Output:
+  - completed evaluation checklist
+- Checkpoint:
+  - stop if unsupported claims remain
+
+### Phase 5: Approve
+
+- Tasks:
+  - stakeholder signoff
+  - leadership distribution approval
+- Output:
+  - recorded approvals
+- Checkpoint:
+  - do not distribute without approvals

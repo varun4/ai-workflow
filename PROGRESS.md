@@ -285,3 +285,61 @@
 
 - Next step: continue module 04 drafting and keep README module index in
   sequence as new modules are added
+
+## 2026-04-08 - Step 16: Add module 04 and track workflow deltas
+
+- Files changed:
+  - `course/modules/04-scope-decomposition/lesson.md`
+  - `course/modules/04-scope-decomposition/slides-outline.md`
+  - `course/modules/04-scope-decomposition/exercise.md`
+  - `course/modules/04-scope-decomposition/facilitator-notes.md`
+  - `examples/developers/rbac-admin-workflow/SPEC.md`
+  - `examples/developers/rbac-admin-workflow/EVAL_CHECKLIST.md`
+  - `examples/developers/rbac-admin-workflow/MODULE_UPDATES.md`
+  - `examples/developers/rbac-admin-workflow/README.md`
+  - `examples/developers/rbac-admin-workflow/deltas/module-04.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/SPEC.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/EVAL_CHECKLIST.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/MODULE_UPDATES.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/README.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/deltas/module-04.md`
+  - `README.md`
+  - `PROGRESS.md`
+- Status: completed
+
+- Validation run:
+  `pymarkdown scan
+  "course/modules/04-scope-decomposition/lesson.md"
+  "course/modules/04-scope-decomposition/slides-outline.md"
+  "course/modules/04-scope-decomposition/exercise.md"
+  "course/modules/04-scope-decomposition/facilitator-notes.md"
+  "examples/developers/rbac-admin-workflow/SPEC.md"
+  "examples/developers/rbac-admin-workflow/EVAL_CHECKLIST.md"
+  "examples/developers/rbac-admin-workflow/MODULE_UPDATES.md"
+  "examples/developers/rbac-admin-workflow/README.md"
+  "examples/developers/rbac-admin-workflow/deltas/module-04.md"
+  "examples/knowledge-workers/vendor-selection-workflow/SPEC.md"
+  "examples/knowledge-workers/vendor-selection-workflow/EVAL_CHECKLIST.md"
+  "examples/knowledge-workers/vendor-selection-workflow/MODULE_UPDATES.md"
+  "examples/knowledge-workers/vendor-selection-workflow/README.md"
+  "examples/knowledge-workers/vendor-selection-workflow/deltas/module-04.md"
+  "README.md" "PROGRESS.md"`
+
+- Next step: draft module 05 context architecture and apply the same
+  module output updates to both workflow tracks
+
+## 2026-04-08 - Step 17: Add scope decomposition principles to core ops
+
+- Files changed:
+  - `SPEC.md`
+  - `EVAL_CHECKLIST.md`
+  - `README.md`
+  - `PROGRESS.md`
+- Status: completed
+
+- Validation run:
+  `pymarkdown scan "SPEC.md" "EVAL_CHECKLIST.md" "README.md"
+  "PROGRESS.md"`
+
+- Next step: apply the same decomposition checks when drafting and
+  validating module 05 outputs

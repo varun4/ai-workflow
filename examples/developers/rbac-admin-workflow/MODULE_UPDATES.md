@@ -42,3 +42,8 @@ Track how each module changes this workflow in a demonstrable way.
   - Files: `SPEC.md`, `EVAL_CHECKLIST.md`
   - Validation: Pass
   - Delta: `deltas/module-03.md`
+- Module 04
+  - Concept: Scope decomposition
+  - Files: `SPEC.md`, `EVAL_CHECKLIST.md`, `README.md`
+  - Validation: Pass
+  - Delta: `deltas/module-04.md`

@@ -24,3 +24,10 @@
 
 - Stakeholder review completed.
 - Leadership distribution approval recorded.
+
+## Decomposition Quality
+
+- Each phase has bounded tasks.
+- Each phase has one concrete output.
+- Each phase has a checkpoint decision.
+- Escalation conditions are explicit at approval gates.

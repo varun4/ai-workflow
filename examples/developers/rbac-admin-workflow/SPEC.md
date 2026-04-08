@@ -37,3 +37,45 @@ authorized roles can perform privileged actions.
 - Run endpoint auth tests and API regression tests.
 - Confirm error response shape for denied requests.
 - Complete release-readiness checklist before review.
+
+## Scope Decomposition (Module 04)
+
+### Phase 1: Plan
+
+- Tasks:
+  - confirm endpoint inventory in scope
+  - confirm role matrix mapping
+- Output:
+  - scoped endpoint and role matrix note
+- Checkpoint:
+  - approve scope before implementation begins
+
+### Phase 2: Implement
+
+- Tasks:
+  - apply role checks to scoped endpoints
+  - update authorization middleware where needed
+- Output:
+  - RBAC code diff for scoped endpoints
+- Checkpoint:
+  - confirm no out-of-scope endpoint changes
+
+### Phase 3: Validate
+
+- Tasks:
+  - run authorization allow/deny tests
+  - run regression suite
+- Output:
+  - validation report and checklist results
+- Checkpoint:
+  - verify all acceptance criteria are satisfied
+
+### Phase 4: Approve
+
+- Tasks:
+  - security review
+  - merge approval
+- Output:
+  - recorded signoff
+- Checkpoint:
+  - stop if signoff is missing

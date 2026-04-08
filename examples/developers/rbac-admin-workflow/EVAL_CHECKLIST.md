@@ -24,3 +24,10 @@
 
 - Security reviewer signoff recorded.
 - Merge approval captured.
+
+## Decomposition Quality
+
+- Each phase has bounded tasks.
+- Each phase has one concrete output.
+- Each phase has a checkpoint decision.
+- Escalation conditions are explicit at approval gates.
