@@ -106,10 +106,10 @@ Track-level module deltas:
    [`docs/primitives/specs.md`](docs/primitives/specs.md)
 3. Read the reliability docs in [`docs/reliability/`](docs/reliability/)
 4. Read the governance docs in [`docs/governance/`](docs/governance/)
-5. Work through [`course/modules/01-introduction/`](course/modules/01-introduction/),
-   [`course/modules/02-workflow-operating-system/`](course/modules/02-workflow-operating-system/),
-   and
-   [`course/modules/03-specification-precision/`](course/modules/03-specification-precision/)
+5. Work through modules:
+   1. [`course/modules/01-introduction/`](course/modules/01-introduction/)
+   2. [`course/modules/02-workflow-operating-system/`](course/modules/02-workflow-operating-system/),
+   3. [`course/modules/03-specification-precision/`](course/modules/03-specification-precision/)
 6. Adapt the templates in [`templates/`](templates/) for your own
    workflow
 7. Use the examples in [`examples/`](examples/) as reference

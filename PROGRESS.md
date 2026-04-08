@@ -272,3 +272,16 @@
 
 - Next step: continue module 04 draft and keep path references linked in
   new README updates
+
+## 2026-04-08 - Step 15: Make module order iterable in README
+
+- Files changed:
+  - `README.md`
+  - `PROGRESS.md`
+- Status: completed
+
+- Validation run:
+  `pymarkdown scan "README.md" "PROGRESS.md"`
+
+- Next step: continue module 04 drafting and keep README module index in
+  sequence as new modules are added
