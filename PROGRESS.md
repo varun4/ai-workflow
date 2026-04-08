@@ -343,3 +343,53 @@
 
 - Next step: apply the same decomposition checks when drafting and
   validating module 05 outputs
+
+## 2026-04-08 - Step 18: Add explicit module automation guardrails
+
+- Files changed:
+  - `SPEC.md`
+  - `EVAL_CHECKLIST.md`
+  - `APPROVAL_BOUNDARIES.md`
+  - `PROGRESS.md`
+- Status: completed
+
+- Validation run:
+  `pymarkdown scan "SPEC.md" "EVAL_CHECKLIST.md"
+  "APPROVAL_BOUNDARIES.md" "PROGRESS.md"`
+
+- Next step: apply these guardrails during module 05 generation and
+  enforce module quality and output gates before completion
+
+## 2026-04-08 - Step 19: Add deterministic module done checklist system
+
+- Files changed:
+  - `docs/standards/MODULE_DONE_CHECKLIST_TEMPLATE.md`
+  - `course/modules/01-introduction/MODULE_DONE_CHECKLIST.md`
+  - `course/modules/02-workflow-operating-system/MODULE_DONE_CHECKLIST.md`
+  - `course/modules/03-specification-precision/MODULE_DONE_CHECKLIST.md`
+  - `course/modules/04-scope-decomposition/MODULE_DONE_CHECKLIST.md`
+  - `course/modules/05-context-architecture/MODULE_DONE_CHECKLIST.md`
+  - `course/modules/06-skills-and-reusable-capabilities/MODULE_DONE_CHECKLIST.md`
+  - `course/modules/07-evaluation-and-failure-patterns/MODULE_DONE_CHECKLIST.md`
+  - `course/modules/08-security-and-adoption/MODULE_DONE_CHECKLIST.md`
+  - `SPEC.md`
+  - `EVAL_CHECKLIST.md`
+  - `README.md`
+  - `PROGRESS.md`
+- Status: completed
+
+- Validation run:
+  `pymarkdown scan
+  "docs/standards/MODULE_DONE_CHECKLIST_TEMPLATE.md"
+  "course/modules/01-introduction/MODULE_DONE_CHECKLIST.md"
+  "course/modules/02-workflow-operating-system/MODULE_DONE_CHECKLIST.md"
+  "course/modules/03-specification-precision/MODULE_DONE_CHECKLIST.md"
+  "course/modules/04-scope-decomposition/MODULE_DONE_CHECKLIST.md"
+  "course/modules/05-context-architecture/MODULE_DONE_CHECKLIST.md"
+  "course/modules/06-skills-and-reusable-capabilities/MODULE_DONE_CHECKLIST.md"
+  "course/modules/07-evaluation-and-failure-patterns/MODULE_DONE_CHECKLIST.md"
+  "course/modules/08-security-and-adoption/MODULE_DONE_CHECKLIST.md"
+  "SPEC.md" "EVAL_CHECKLIST.md" "README.md" "PROGRESS.md"`
+
+- Next step: use `MODULE_DONE_CHECKLIST.md` as a blocking verification
+  artifact during module 05 generation and track updates

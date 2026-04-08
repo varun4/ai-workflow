@@ -32,6 +32,21 @@ knowledge workers.
 - Insert checkpoints before risky actions.
 - Define escalation and approval gates explicitly.
 
+### Module Automation Constraints
+
+- Use the module generation contract for all new module work.
+- Use `docs/standards/MODULE_DONE_CHECKLIST_TEMPLATE.md` and keep one
+  `MODULE_DONE_CHECKLIST.md` instance in every module folder.
+- Apply definition-first writing in all module content:
+  1. definition
+  2. concrete example
+  3. optional metaphor
+  4. practical implication
+- Apply scope decomposition for multi-step module work:
+  - bounded phases and tasks
+  - one output per task
+  - explicit checkpoints
+
 ## Success Criteria
 
 - Module content is practical, measurable, and aligned with module rules.
@@ -48,6 +63,15 @@ knowledge workers.
   `PROGRESS.md`.
 - A module is not complete until both track workflows reflect the module
   concept with validated, traceable changes.
+
+### Module Completion Criteria
+
+- A module is complete only when all of the following are true:
+  - required module files are present and aligned
+  - both track workflows are updated for the module concept
+  - both `deltas/module-0X.md` files exist and are linked
+  - both `MODULE_UPDATES.md` files are updated
+  - validation is run and recorded in `PROGRESS.md`
 
 ## Validation
 
