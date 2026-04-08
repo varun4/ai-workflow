@@ -1,0 +1,39 @@
+# RBAC Admin Endpoints Spec
+
+## Objective
+
+Add role-based access checks to selected admin endpoints so only
+authorized roles can perform privileged actions.
+
+## Scope
+
+- Add role checks to:
+  - `GET /admin/users`
+  - `POST /admin/roles`
+  - `GET /admin/audit`
+- Add tests for allowed and denied role behavior.
+
+## Non-Goals
+
+- No auth provider migration.
+- No admin UI redesign.
+- No changes to non-admin endpoints.
+
+## Constraints
+
+- Preserve existing response formats and status code conventions.
+- Unauthorized access must return `403` with existing error shape.
+- Do not degrade existing endpoint latency beyond accepted limits.
+
+## Success Criteria
+
+- All scoped endpoints enforce role checks.
+- Authorized roles pass existing and new tests.
+- Unauthorized roles receive `403` in all scoped endpoints.
+- Existing regression suite remains green.
+
+## Validation
+
+- Run endpoint auth tests and API regression tests.
+- Confirm error response shape for denied requests.
+- Complete release-readiness checklist before review.

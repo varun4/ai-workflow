@@ -2,18 +2,17 @@
 
 ## Scenario
 
-You lead a small team that wants to use AI agents in one recurring workflow.
+Use one anchor example:
 
-Choose one:
+- Coding: add role-based access checks to admin endpoints
+- Knowledge work: prepare a vendor selection recommendation for
+  leadership
 
-- shipping a small software feature
-- preparing a research synthesis
-- producing a structured meeting summary
-- handling a recurring operations task
+You may complete both for comparison if time allows.
 
 ## Task
 
-Design a minimal workflow operating system for that workflow.
+Design a minimal workflow operating system for the selected anchor.
 
 Your design must include:
 
@@ -44,7 +43,7 @@ A strong submission should:
 - show explicit boundaries
 - include at least one realistic approval gate
 - make evaluation concrete
-- avoid vague phrases like "improve" or "help with everything"
+- avoid vague language without criteria
 
 ## Debrief Prompt
 
@@ -53,3 +52,4 @@ After completing the exercise, explain:
 - which artifact was hardest to define
 - where ambiguity still remains
 - what could go wrong if the workflow ran without evaluation
+- which differences appeared between coding and knowledge-work mapping

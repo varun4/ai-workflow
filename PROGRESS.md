@@ -132,3 +132,75 @@
 
 - Next step: draft and patch module 02 and module 03 with the same
   anchor examples and definition-first structure
+
+## 2026-04-08 - Step 10: Align module 02 and add filled workflow examples
+
+- Files changed:
+  - `course/modules/02-workflow-operating-system/lesson.md`
+  - `course/modules/02-workflow-operating-system/slides-outline.md`
+  - `course/modules/02-workflow-operating-system/exercise.md`
+  - `course/modules/02-workflow-operating-system/facilitator-notes.md`
+  - `examples/developers/software-delivery-case-study.md`
+  - `examples/knowledge-workers/research-synthesis-case-study.md`
+  - `examples/developers/rbac-admin-workflow/README.md`
+  - `examples/developers/rbac-admin-workflow/AGENTS.md`
+  - `examples/developers/rbac-admin-workflow/SPEC.md`
+  - `examples/developers/rbac-admin-workflow/PROGRESS.md`
+  - `examples/developers/rbac-admin-workflow/SKILL_SECURITY_REVIEW.md`
+  - `examples/developers/rbac-admin-workflow/EVAL_CHECKLIST.md`
+  - `examples/developers/rbac-admin-workflow/APPROVAL_BOUNDARIES.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/README.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/AGENTS.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/SPEC.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/PROGRESS.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/SKILL_EVIDENCE_REVIEW.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/EVAL_CHECKLIST.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/APPROVAL_BOUNDARIES.md`
+  - `README.md`
+  - `PROGRESS.md`
+- Status: completed
+
+- Validation run:
+  `pymarkdown scan "course/modules/02-workflow-operating-system/lesson.md"
+  "course/modules/02-workflow-operating-system/slides-outline.md"
+  "course/modules/02-workflow-operating-system/exercise.md"
+  "course/modules/02-workflow-operating-system/facilitator-notes.md"
+  "examples/developers/software-delivery-case-study.md"
+  "examples/knowledge-workers/research-synthesis-case-study.md"
+  "examples/developers/rbac-admin-workflow/README.md"
+  "examples/developers/rbac-admin-workflow/AGENTS.md"
+  "examples/developers/rbac-admin-workflow/SPEC.md"
+  "examples/developers/rbac-admin-workflow/PROGRESS.md"
+  "examples/developers/rbac-admin-workflow/SKILL_SECURITY_REVIEW.md"
+  "examples/developers/rbac-admin-workflow/EVAL_CHECKLIST.md"
+  "examples/developers/rbac-admin-workflow/APPROVAL_BOUNDARIES.md"
+  "examples/knowledge-workers/vendor-selection-workflow/README.md"
+  "examples/knowledge-workers/vendor-selection-workflow/AGENTS.md"
+  "examples/knowledge-workers/vendor-selection-workflow/SPEC.md"
+  "examples/knowledge-workers/vendor-selection-workflow/PROGRESS.md"
+  "examples/knowledge-workers/vendor-selection-workflow/SKILL_EVIDENCE_REVIEW.md"
+  "examples/knowledge-workers/vendor-selection-workflow/EVAL_CHECKLIST.md"
+  "examples/knowledge-workers/vendor-selection-workflow/APPROVAL_BOUNDARIES.md"
+  "README.md"`
+
+- Next step: draft module 03 using the same anchor examples and
+  definition-first structure
+
+## 2026-04-08 - Step 11: Add project operating artifact files
+
+- Files changed:
+  - `SPEC.md`
+  - `SKILL_EVIDENCE_REVIEW.md`
+  - `EVAL_CHECKLIST.md`
+  - `APPROVAL_BOUNDARIES.md`
+  - `README.md`
+  - `PROGRESS.md`
+- Status: completed
+
+- Validation run:
+  `pymarkdown scan "SPEC.md" "SKILL_EVIDENCE_REVIEW.md"
+  "EVAL_CHECKLIST.md" "APPROVAL_BOUNDARIES.md" "README.md"
+  "PROGRESS.md"`
+
+- Next step: draft module 03 content with the same anchor examples,
+  then align examples and exercises to module learning outcomes

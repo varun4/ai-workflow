@@ -2,8 +2,8 @@
 
 ## Slide 1: What a Workflow Operating System Is
 
-- A structure for reliable AI collaboration
-- More than prompts, less than bureaucracy
+- definition in plain language
+- reliable execution across sessions
 
 ## Slide 2: Why Teams Need One
 
@@ -73,14 +73,16 @@ flowchart LR
 
 - goal -> spec -> rules -> execution -> progress -> evaluation
 
-## Slide 11: Developer Example
+## Slide 11: Coding Anchor Mapping
 
-- feature workflow
+- role-based admin endpoint checks
+- artifacts mapped end to end
 
-## Slide 12: Knowledge Worker Example
+## Slide 12: Knowledge-Work Anchor Mapping
 
-- research synthesis workflow
+- vendor recommendation brief
+- artifacts mapped end to end
 
 ## Slide 13: Discussion
 
-- what artifact is missing in your current workflow?
+- what artifact is weakest in your workflow today?

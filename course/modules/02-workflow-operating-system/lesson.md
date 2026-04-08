@@ -2,21 +2,49 @@
 
 ## Learning Objectives
 
-- Understand the core artifacts that make agentic work reliable
-- See how `AGENTS.md`, `PROGRESS.md`, specs, skills, and evaluation work together
-- Distinguish a usable workflow system from ad hoc prompting
-- Design a minimal operating system for a real team workflow
+- By the end of this module, learners will be able to:
+- define a workflow operating system in plain language
+- identify the five core artifacts in two anchor workflows
+- map each artifact to a concrete execution responsibility
+- design a minimal workflow operating system for one use case
+- evaluate whether a workflow is execution-ready or assumption-heavy
 
 ## Core Concept
 
-A workflow operating system is the set of artifacts, rules, and
-checkpoints that makes agent behavior reliable across sessions and
-tasks.
+### Definition: Workflow Operating System
+
+A workflow operating system is the set of artifacts, rules, and checks
+that makes agent execution reliable across sessions and tasks.
+
+### Concrete Examples
+
+Coding anchor:
+- Add role-based access checks to admin endpoints.
+
+Knowledge-work anchor:
+- Prepare a vendor selection recommendation for leadership.
+
+In both cases, the same system is used:
+- `AGENTS.md` defines behavior boundaries
+- `PROGRESS.md` preserves continuity
+- Spec defines objective, scope, and constraints
+- Skill improves repeated quality on a focused task
+- Evaluation checks correctness before completion
 
 Without an operating system, teams rely on memory, chat history, and
 informal expectations. That usually leads to drift, rework, and unsafe
 actions. With an operating system, work becomes inspectable,
 repeatable, and easier to improve.
+
+### Optional Metaphor
+
+The workflow operating system is the assembly line and quality station,
+not the machine doing one step.
+
+### Practical Implication
+
+Without explicit artifacts, agents guess. With explicit artifacts,
+execution and review become testable.
 
 ## The Five Core Artifacts
 
@@ -104,15 +132,25 @@ The key idea is that these artifacts reinforce each other. Specs define
 the task. `AGENTS.md` defines the rules. `PROGRESS.md` preserves
 continuity. Skills improve consistency. Evaluation protects quality.
 
-## Good Pattern
+## Good Pattern: Artifact Mapping On Real Work
 
-A team wants to add a feature.
+Coding anchor:
+- Goal: role-based checks for admin endpoints
+- `AGENTS.md`: ask-first rule for permission model changes
+- Spec: endpoints in scope, non-goals, acceptance criteria
+- `PROGRESS.md`: discovery, implementation, validation entries
+- Skill: API security review checklist
+- Evaluation: role tests + regression checks
+- Approval boundary: security signoff before merge
 
-They:
-- write a short spec
-- use `AGENTS.md` to define safe behavior
-- log progress after each meaningful step
-- run an evaluation checklist before completion
+Knowledge-work anchor:
+- Goal: vendor recommendation for leadership
+- `AGENTS.md`: source quality and confidentiality boundaries
+- Spec: criteria, comparison scope, output format
+- `PROGRESS.md`: source collection, scoring, draft refinement
+- Skill: evidence quality and bias check
+- Evaluation: rubric + citation traceability
+- Approval boundary: stakeholder review before distribution
 
 Result:
 - less ambiguity
@@ -120,11 +158,9 @@ Result:
 - more visible decisions
 - fewer hidden assumptions
 
-## Bad Pattern
+## Bad Pattern: Prompt-Only Execution
 
-A team says:
-
-"Use AI to build this feature and let me know when it's done."
+"Use AI to handle this quickly and send me the final result."
 
 They do not define:
 - scope
@@ -138,34 +174,12 @@ Result:
 - weak accountability
 - hard-to-reproduce work
 
-## Example: Developer Workflow
-
-A developer wants help implementing a feature.
-
-The operating system includes:
-- `AGENTS.md` with repo rules and ask-first actions
-- a feature spec with success criteria
-- `PROGRESS.md` entries after scaffold, implementation, and validation
-- a code-review skill
-- a release-readiness checklist
-
-## Example: Knowledge Work Workflow
-
-A team member wants an AI-assisted research synthesis.
-
-The operating system includes:
-- `AGENTS.md` with confidentiality and approval boundaries
-- a research brief spec
-- `PROGRESS.md` entries after source review and synthesis draft
-- a synthesis skill
-- an evaluation checklist for source quality, completeness, and bias
-
 ## Reflection Questions
 
-1. Which of these artifacts do you already use, even informally?
-2. Which artifact is currently missing from your workflow?
-3. Where does your team rely too heavily on memory or chat history?
-4. What actions should always require approval in your environment?
+1. Define workflow operating system in one sentence.
+2. Which artifact is currently weakest in your workflow?
+3. In the coding anchor, where is approval required?
+4. In the knowledge-work anchor, what makes evaluation reliable?
 
 ## Summary
 

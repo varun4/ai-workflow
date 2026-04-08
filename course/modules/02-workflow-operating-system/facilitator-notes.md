@@ -5,16 +5,15 @@
 - Keep this module concrete and artifact-driven
 - Show that the operating system is the minimum structure needed for
   reliable use, not process theater
-- Use one developer example and one knowledge-work example to reinforce
-  transferability
+- Use the two anchor examples from module 01 for continuity
 
 ## What Students Should Leave With
 
 By the end of the module, learners should be able to explain:
-- why prompting alone is insufficient
-- what each artifact does
-- how the artifacts fit together
-- where approval and evaluation belong
+- define workflow operating system in plain language
+- identify each artifact in both anchors
+- map artifact roles to execution responsibilities
+- locate approval and evaluation boundaries
 
 ## Common Student Mistakes
 
@@ -30,6 +29,14 @@ By the end of the module, learners should be able to explain:
 - What work in your organization is currently happening without a
   visible evaluation step?
 - Where should your first approval boundary be?
+
+## Exit Check
+
+Before closing, ask each learner to provide:
+
+- one artifact map for the coding anchor
+- one artifact map for the knowledge-work anchor
+- one missing boundary in their current team workflow
 
 ## Suggested Timing
 

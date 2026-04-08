@@ -13,6 +13,15 @@ decision-support brief.
 - evaluation checklist
 - approval boundary for sensitive information
 
+## Reference Workflow Files
+
+- `examples/knowledge-workers/vendor-selection-workflow/AGENTS.md`
+- `examples/knowledge-workers/vendor-selection-workflow/SPEC.md`
+- `examples/knowledge-workers/vendor-selection-workflow/PROGRESS.md`
+- `examples/knowledge-workers/vendor-selection-workflow/SKILL_EVIDENCE_REVIEW.md`
+- `examples/knowledge-workers/vendor-selection-workflow/EVAL_CHECKLIST.md`
+- `examples/knowledge-workers/vendor-selection-workflow/APPROVAL_BOUNDARIES.md`
+
 ## Teaching Goal
 
 Show that the same operating model works outside software when tasks

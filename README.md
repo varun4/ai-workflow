@@ -73,6 +73,15 @@ flowchart LR
 - `sessions/`: workshop formats and delivery plans
 - `PROGRESS.md`: append-only execution log for repository development
 
+## Project Operating Artifacts
+
+- `SPEC.md`: current project objective, scope, constraints, and success
+  criteria
+- `SKILL_EVIDENCE_REVIEW.md`: reusable review skill for definition and
+  evidence quality
+- `EVAL_CHECKLIST.md`: project completion checklist
+- `APPROVAL_BOUNDARIES.md`: ask-first and approval gate actions
+
 ## Start Here
 
 1. Read `docs/foundations/operating-model.md`
@@ -124,6 +133,8 @@ Current v1 focus:
 - introductory course modules with teaching assets
 - shared and audience-specific templates
 - developer and knowledge-worker case studies
+- filled artifact bundles for one developer and one knowledge-work
+  workflow example
 - workshop-ready session plans
 
 ## How To Use This Repository
