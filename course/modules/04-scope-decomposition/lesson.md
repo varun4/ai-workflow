@@ -102,6 +102,17 @@ Example:
 5. Draft recommendation
 6. Run evidence and approval checks
 
+## Failure Mode
+
+Work fails when decomposition is skipped or too coarse.
+
+Common failure patterns:
+- phases combine too many decisions
+- tasks do not define observable outputs
+- checkpoints do not define continue/revise/escalate logic
+- validation is deferred until the end
+- approval gates are missing or too late
+
 ## Bad Pattern
 
 "Break this into a few steps and handle everything."
@@ -111,6 +122,21 @@ Problems:
 - no output contracts per step
 - no checkpoint gates
 - no explicit escalation path
+
+## Real Example
+
+Coding anchor decomposition:
+- plan endpoint scope and role matrix
+- implement scoped RBAC checks
+- validate with role tests and regression checks
+- escalate for security signoff before merge
+
+Knowledge-work anchor decomposition:
+- plan criteria and source constraints
+- analyze evidence and score vendors
+- draft recommendation brief
+- validate evidence traceability and rubric completeness
+- escalate for stakeholder signoff before distribution
 
 ## Good Pattern
 

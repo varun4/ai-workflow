@@ -30,7 +30,7 @@ Your design must include:
 6. One evaluation checklist
 7. Two ask-first approval boundaries
 
-## Expected Output
+## Required Output Format
 
 A one-page workflow design that another person could use as the
 starting point for a repeatable agent-assisted process.
@@ -45,7 +45,7 @@ A strong submission should:
 - make evaluation concrete
 - avoid vague language without criteria
 
-## Debrief Prompt
+## Debrief Questions
 
 After completing the exercise, explain:
 

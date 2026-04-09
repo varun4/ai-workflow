@@ -109,6 +109,30 @@ Rule:
 - constrain what must be correct; allow flexibility where multiple good
   paths exist.
 
+## Failure Mode
+
+When specification precision is missing, execution quality depends on
+assumptions.
+
+Common failure patterns:
+- objective ambiguity
+- scope creep from missing non-goals
+- non-testable acceptance criteria
+- hidden assumptions in constraints
+- missing approval gates for high-risk actions
+
+## Real Example
+
+Coding anchor upgrade:
+- vague: "Add role checks to admin stuff quickly."
+- precise: define endpoint scope, role matrix, test requirements, and
+  security signoff boundary.
+
+Knowledge-work anchor upgrade:
+- vague: "Create a vendor recommendation."
+- precise: define rubric, source rules, output contract, validation
+  method, and stakeholder signoff boundary.
+
 ## Bad Pattern
 
 ### Vague Coding Request
@@ -158,14 +182,6 @@ Missing:
   recommendation rationale explicit.
 - Validation: evidence traceability and completeness checks.
 - Approval boundary: director signoff before distribution.
-
-## Common Failure Patterns
-
-- objective ambiguity
-- scope creep from missing non-goals
-- non-testable acceptance criteria
-- hidden assumptions in constraints
-- missing approval gates for high-risk actions
 
 ## Reflection Questions
 

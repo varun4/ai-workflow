@@ -29,7 +29,7 @@
 
 ## Validation Commands Used
 
-- `pymarkdown scan <module-05 and track changed files>`
+- `pymarkdown scan <module-05 changed files>`
 
 ## Completion Decision
 

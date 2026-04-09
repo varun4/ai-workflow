@@ -7,6 +7,11 @@
   reliable use, not process theater
 - Use the two anchor examples from module 01 for continuity
 
+## Core Message
+
+The workflow operating system is the minimum artifact set that makes
+agent execution inspectable, repeatable, and safe.
+
 ## What Students Should Leave With
 
 By the end of the module, learners should be able to explain:
@@ -23,7 +28,7 @@ By the end of the module, learners should be able to explain:
 - skipping evaluation because the output sounds plausible
 - defining skills that are too broad
 
-## Discussion Prompts
+## Facilitation Prompts
 
 - Which artifact would create the biggest improvement in your current workflow?
 - What work in your organization is currently happening without a

@@ -19,7 +19,7 @@ For each request, produce a first-pass specification with:
 - success criteria
 - approval boundary
 
-## Expected Output
+## Required Output Format
 
 For each request, provide:
 

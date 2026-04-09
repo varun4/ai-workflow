@@ -132,6 +132,32 @@ The key idea is that these artifacts reinforce each other. Specs define
 the task. `AGENTS.md` defines the rules. `PROGRESS.md` preserves
 continuity. Skills improve consistency. Evaluation protects quality.
 
+## Failure Mode
+
+Prompt-only execution fails because the workflow has no shared controls.
+
+Typical outcomes:
+- unclear scope and completion rules
+- hidden assumptions across sessions
+- no explicit review or approval gate
+- plausible output accepted without validation
+
+## Real Example
+
+Coding anchor flow:
+1. define RBAC endpoint scope in spec
+2. enforce ask-first rules from `AGENTS.md`
+3. implement and log decisions in `PROGRESS.md`
+4. run role-based tests and checklist validation
+5. require security signoff before merge
+
+Knowledge-work anchor flow:
+1. define vendor criteria and output contract in spec
+2. enforce source and confidentiality rules from `AGENTS.md`
+3. record evidence and scoring decisions in `PROGRESS.md`
+4. run traceability and rubric evaluation
+5. require stakeholder signoff before distribution
+
 ## Good Pattern: Artifact Mapping On Real Work
 
 Coding anchor:

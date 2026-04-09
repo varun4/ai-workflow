@@ -7,6 +7,11 @@
 - Keep language operational and testable
 - Reframe weak output as workflow design failure
 
+## Core Message
+
+Reliable agent execution starts with explicit workflow artifacts and
+boundaries, not stronger one-off prompts.
+
 ## Definitions To Enforce
 
 Learners should be able to state:

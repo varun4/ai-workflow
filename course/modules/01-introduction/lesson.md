@@ -42,25 +42,7 @@ instruction shouted across a room.
 If a request has no scope, no criteria, and no boundaries, an agent
 must guess. Guessing creates drift, rework, and safety risk.
 
-## Prompting vs Workflow Design
-
-### Definition: Ad Hoc Prompting
-
-Ad hoc prompting is issuing one-off requests without shared artifacts,
-boundaries, or evaluation criteria.
-
-### Example
-
-"Add auth to admin APIs quickly."
-"Make a vendor recommendation."
-
-Both are directionally useful but execution-unsafe as written.
-
-### Practical Implication
-
-Prompting can start work; workflow design makes work reliable.
-
-## Why Agentic Work Fails Without Structure
+## Failure Mode
 
 Most failures come from missing workflow elements, not missing model
 intelligence.
@@ -73,17 +55,46 @@ Common failure causes:
 - no approval boundary
 - no evaluation loop
 
-## What Learners Build in This Course
+## Good Pattern
 
-Learners will build:
-- a reusable operating model
-- executable specifications
-- progress tracking habits
-- evaluation checklists
-- approval boundary rules
+Use a minimum artifact set before execution:
 
-All modules use the same two anchor examples to show transferability
-across developer and knowledge-worker contexts.
+- operating rules (`AGENTS.md`)
+- executable specification
+- progress tracking (`PROGRESS.md`)
+- evaluation checklist
+- approval boundary
+
+Prompting can start work. Workflow design makes work reliable.
+
+## Bad Pattern
+
+Ad hoc prompting is issuing one-off requests without shared artifacts,
+boundaries, or evaluation criteria.
+
+Examples:
+- "Add auth to admin APIs quickly."
+- "Make a vendor recommendation."
+
+Both are directionally useful but execution-unsafe as written.
+
+## Real Example
+
+Coding anchor:
+- Add role-based access checks to admin endpoints.
+
+Knowledge-work anchor:
+- Prepare a vendor selection recommendation for leadership.
+
+In both examples, learners build the same operating workflow:
+- reusable operating model
+- executable specification
+- progress tracking
+- evaluation checks
+- approval boundaries
+
+All modules use these two anchors to show transferability across
+developer and knowledge-worker contexts.
 
 ## Reflection Questions
 

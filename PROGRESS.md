@@ -450,3 +450,64 @@
 
 - Next step: keep operational and context-loading instructions in
   `AGENTS.md` and linked operating files only
+
+## 2026-04-09 - Step 22: Audit module done checklists for 01 to 05
+
+- Files changed:
+  - `course/modules/01-introduction/MODULE_DONE_CHECKLIST.md`
+  - `course/modules/02-workflow-operating-system/MODULE_DONE_CHECKLIST.md`
+  - `course/modules/03-specification-precision/MODULE_DONE_CHECKLIST.md`
+  - `course/modules/04-scope-decomposition/MODULE_DONE_CHECKLIST.md`
+  - `course/modules/05-context-architecture/MODULE_DONE_CHECKLIST.md`
+  - `PROGRESS.md`
+- Status: completed
+
+- Validation run:
+  `pymarkdown scan
+  "course/modules/01-introduction/MODULE_DONE_CHECKLIST.md"
+  "course/modules/02-workflow-operating-system/MODULE_DONE_CHECKLIST.md"
+  "course/modules/03-specification-precision/MODULE_DONE_CHECKLIST.md"
+  "course/modules/04-scope-decomposition/MODULE_DONE_CHECKLIST.md"
+  "course/modules/05-context-architecture/MODULE_DONE_CHECKLIST.md"
+  "PROGRESS.md"`
+
+- Next step: align modules 01 to 04 lesson and facilitator heading
+  sections to satisfy the module generation contract, then re-run checklist
+  audit for PASS/FAIL decisions
+
+## 2026-04-09 - Step 23: Fix module 01 to 04 headings and re-audit
+
+- Files changed:
+  - `course/modules/01-introduction/lesson.md`
+  - `course/modules/01-introduction/exercise.md`
+  - `course/modules/01-introduction/facilitator-notes.md`
+  - `course/modules/01-introduction/MODULE_DONE_CHECKLIST.md`
+  - `course/modules/02-workflow-operating-system/lesson.md`
+  - `course/modules/02-workflow-operating-system/exercise.md`
+  - `course/modules/02-workflow-operating-system/facilitator-notes.md`
+  - `course/modules/02-workflow-operating-system/MODULE_DONE_CHECKLIST.md`
+  - `course/modules/03-specification-precision/lesson.md`
+  - `course/modules/03-specification-precision/MODULE_DONE_CHECKLIST.md`
+  - `course/modules/04-scope-decomposition/lesson.md`
+  - `course/modules/04-scope-decomposition/MODULE_DONE_CHECKLIST.md`
+  - `PROGRESS.md`
+- Status: completed
+
+- Validation run:
+  `pymarkdown scan
+  "course/modules/01-introduction/lesson.md"
+  "course/modules/01-introduction/exercise.md"
+  "course/modules/01-introduction/facilitator-notes.md"
+  "course/modules/01-introduction/MODULE_DONE_CHECKLIST.md"
+  "course/modules/02-workflow-operating-system/lesson.md"
+  "course/modules/02-workflow-operating-system/exercise.md"
+  "course/modules/02-workflow-operating-system/facilitator-notes.md"
+  "course/modules/02-workflow-operating-system/MODULE_DONE_CHECKLIST.md"
+  "course/modules/03-specification-precision/lesson.md"
+  "course/modules/03-specification-precision/MODULE_DONE_CHECKLIST.md"
+  "course/modules/04-scope-decomposition/lesson.md"
+  "course/modules/04-scope-decomposition/MODULE_DONE_CHECKLIST.md"
+  "PROGRESS.md"`
+
+- Next step: proceed to module 06 SOTA research and preview content
+  before writing module files
