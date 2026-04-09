@@ -437,3 +437,16 @@
 
 - Next step: draft module 06 skills and reusable capabilities, then
   apply module output updates for both track workflows
+
+## 2026-04-08 - Step 21: Keep README human-facing for agent policy
+
+- Files changed:
+  - `README.md`
+  - `PROGRESS.md`
+- Status: completed
+
+- Validation run:
+  `pymarkdown scan "README.md" "PROGRESS.md"`
+
+- Next step: keep operational and context-loading instructions in
+  `AGENTS.md` and linked operating files only

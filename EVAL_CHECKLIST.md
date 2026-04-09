@@ -12,6 +12,8 @@
 
 ## Constraint Compliance
 
+- Project context package was defined and validated per
+  `PROJECT_CONTEXT_ARCHITECTURE.md`.
 - Preview-first approval was followed.
 - Definition-first writing was applied.
 - Ask-first boundaries were respected.

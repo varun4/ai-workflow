@@ -20,6 +20,8 @@ knowledge workers.
 
 - Follow preview-first content approval.
 - Follow definition-first writing.
+- Follow `PROJECT_CONTEXT_ARCHITECTURE.md` for context package design,
+  source precedence, phase owners, and refresh triggers.
 - Keep shared framework in `docs/` and split by audience mainly in
   `tracks/`, `templates/`, and `examples/`.
 

@@ -19,6 +19,38 @@
 - Prefer improving existing structure over creating parallel systems unless
   there is a clear reason.
 
+## Agent Context Loading Rules
+
+- Agents must load operating context from this file and the operating
+  files referenced here.
+- `README.md` is for human onboarding and navigation only.
+- `README.md` is not an authoritative policy source for agent execution.
+
+### Required Context Sources (Load Before Module Work)
+
+1. `AGENTS.md`
+2. `SPEC.md`
+3. `APPROVAL_BOUNDARIES.md`
+4. `EVAL_CHECKLIST.md`
+5. `SKILL_EVIDENCE_REVIEW.md`
+6. `PROGRESS.md`
+7. `docs/standards/MODULE_DONE_CHECKLIST_TEMPLATE.md`
+8. Active module folder under `course/modules/NN-*`
+9. Track workflow artifacts under:
+   - `examples/developers/rbac-admin-workflow/`
+   - `examples/knowledge-workers/vendor-selection-workflow/`
+
+### Source Precedence (If Conflict Exists)
+
+1. `AGENTS.md`
+2. `APPROVAL_BOUNDARIES.md`
+3. `EVAL_CHECKLIST.md`
+4. `SPEC.md`
+5. Active module files (`course/modules/NN-*`)
+6. Active track workflow files (`examples/...`)
+7. `PROGRESS.md`
+8. If unresolved conflict remains, stop and ask.
+
 ## Allowed Without Prompt
 
 - Read files and list directories.
@@ -32,6 +64,7 @@
 
 Primary operating files (use these first):
 - Project scope and constraints: `SPEC.md`
+- Project context package and precedence: `PROJECT_CONTEXT_ARCHITECTURE.md`
 - Approval and ask-first actions: `APPROVAL_BOUNDARIES.md`
 - Validation and completion checks: `EVAL_CHECKLIST.md`
 - Evidence and content review skill: `SKILL_EVIDENCE_REVIEW.md`

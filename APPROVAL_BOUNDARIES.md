@@ -27,3 +27,4 @@
 - Stop and ask if either track workflow update is incomplete.
 - Stop and ask if validation fails or expected checker is unavailable.
 - Do not mark a module complete until all module output gates pass.
+- Stop and ask if project context package is missing, stale, or has unresolved conflicts.

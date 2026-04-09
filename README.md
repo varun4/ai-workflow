@@ -73,8 +73,9 @@ flowchart LR
 - [`examples/`](examples/): end-to-end case studies
 - [`skills/`](skills/): reusable workflow skills and a shared index
 - [`sessions/`](sessions/): workshop formats and delivery plans
-- [`PROGRESS.md`](PROGRESS.md): append-only execution log for repository
-  development
+
+Agent operating rules, context-loading sources, and execution policies
+are defined in [`AGENTS.md`](AGENTS.md).
 
 Track-level module deltas:
 
@@ -208,11 +209,9 @@ Then move into the audience-specific templates that match your work.
 
 ## Repository Notes
 
-- [`AGENTS.md`](AGENTS.md) defines operating rules for agent sessions in
-  repository
-- [`PROGRESS.md`](PROGRESS.md) is append-only and records major
-  implementation steps
 - Course content under [`course/`](course/), [`docs/`](docs/),
   [`templates/`](templates/), [`examples/`](examples/),
   [`tracks/`](tracks/), and [`sessions/`](sessions/) follows a
-  preview-first review workflow
+  preview-first review workflow.
+- Agent policy and context-loading rules are maintained in
+  [`AGENTS.md`](AGENTS.md).
