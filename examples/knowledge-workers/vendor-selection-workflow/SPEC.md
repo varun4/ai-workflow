@@ -122,3 +122,35 @@ defined criteria and evidence.
 
 - workflow owner maintains context package per phase
 - stakeholder reviewer confirms context quality before approval
+
+## Skills and Reusable Capabilities (Module 06)
+
+### Skill Set
+
+- `SKILL_EVIDENCE_REVIEW.md`
+- `SKILL_EVIDENCE_CONTEXT_REFRESH.md`
+
+### Skill Invocation by Phase
+
+- Plan: run `SKILL_EVIDENCE_CONTEXT_REFRESH.md`
+- Analyze: run `SKILL_EVIDENCE_CONTEXT_REFRESH.md`
+- Draft: run `SKILL_EVIDENCE_CONTEXT_REFRESH.md`
+- Validate: run `SKILL_EVIDENCE_CONTEXT_REFRESH.md`, then
+  `SKILL_EVIDENCE_REVIEW.md`
+- Approve: run `SKILL_EVIDENCE_CONTEXT_REFRESH.md`, then
+  `SKILL_EVIDENCE_REVIEW.md`
+
+### Skill Output Contract
+
+- Context refresh output:
+  - phase evidence context note
+  - escalation flag when blocking source issues exist
+- Evidence review output:
+  - review findings
+  - approval recommendation
+
+### Skill Revision Triggers
+
+- scoring rubric changes
+- source policy changes
+- recurring evidence validation failures linked to stale context

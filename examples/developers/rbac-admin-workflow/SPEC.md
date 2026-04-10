@@ -111,3 +111,34 @@ authorized roles can perform privileged actions.
 
 - implementation lead maintains phase context package
 - security reviewer confirms context completeness before approval
+
+## Skills and Reusable Capabilities (Module 06)
+
+### Skill Set
+
+- `SKILL_SECURITY_REVIEW.md`
+- `SKILL_RBAC_CONTEXT_REFRESH.md`
+
+### Skill Invocation by Phase
+
+- Plan: run `SKILL_RBAC_CONTEXT_REFRESH.md`
+- Implement: run `SKILL_RBAC_CONTEXT_REFRESH.md`
+- Validate: run `SKILL_RBAC_CONTEXT_REFRESH.md`, then
+  `SKILL_SECURITY_REVIEW.md`
+- Approve: run `SKILL_RBAC_CONTEXT_REFRESH.md`, then
+  `SKILL_SECURITY_REVIEW.md`
+
+### Skill Output Contract
+
+- Context refresh output:
+  - phase context note
+  - escalation flag when blocking context issues exist
+- Security review output:
+  - review findings
+  - approval recommendation
+
+### Skill Revision Triggers
+
+- role matrix schema changes
+- endpoint scope changes
+- recurring validation failures linked to stale context

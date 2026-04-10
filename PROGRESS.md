@@ -511,3 +511,51 @@
 
 - Next step: proceed to module 06 SOTA research and preview content
   before writing module files
+
+## 2026-04-10 - Step 24: Draft module 06 and apply track skill updates
+
+- Files changed:
+  - `course/modules/06-skills-and-reusable-capabilities/lesson.md`
+  - `course/modules/06-skills-and-reusable-capabilities/slides-outline.md`
+  - `course/modules/06-skills-and-reusable-capabilities/exercise.md`
+  - `course/modules/06-skills-and-reusable-capabilities/facilitator-notes.md`
+  - `course/modules/06-skills-and-reusable-capabilities/MODULE_DONE_CHECKLIST.md`
+  - `examples/developers/rbac-admin-workflow/SPEC.md`
+  - `examples/developers/rbac-admin-workflow/EVAL_CHECKLIST.md`
+  - `examples/developers/rbac-admin-workflow/README.md`
+  - `examples/developers/rbac-admin-workflow/MODULE_UPDATES.md`
+  - `examples/developers/rbac-admin-workflow/SKILL_RBAC_CONTEXT_REFRESH.md`
+  - `examples/developers/rbac-admin-workflow/deltas/module-06.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/SPEC.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/EVAL_CHECKLIST.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/README.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/MODULE_UPDATES.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/SKILL_EVIDENCE_CONTEXT_REFRESH.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/deltas/module-06.md`
+  - `README.md`
+  - `PROGRESS.md`
+- Status: completed
+
+- Validation run:
+  `pymarkdown scan
+  "course/modules/06-skills-and-reusable-capabilities/lesson.md"
+  "course/modules/06-skills-and-reusable-capabilities/slides-outline.md"
+  "course/modules/06-skills-and-reusable-capabilities/exercise.md"
+  "course/modules/06-skills-and-reusable-capabilities/facilitator-notes.md"
+  "course/modules/06-skills-and-reusable-capabilities/MODULE_DONE_CHECKLIST.md"
+  "examples/developers/rbac-admin-workflow/SPEC.md"
+  "examples/developers/rbac-admin-workflow/EVAL_CHECKLIST.md"
+  "examples/developers/rbac-admin-workflow/README.md"
+  "examples/developers/rbac-admin-workflow/MODULE_UPDATES.md"
+  "examples/developers/rbac-admin-workflow/SKILL_RBAC_CONTEXT_REFRESH.md"
+  "examples/developers/rbac-admin-workflow/deltas/module-06.md"
+  "examples/knowledge-workers/vendor-selection-workflow/SPEC.md"
+  "examples/knowledge-workers/vendor-selection-workflow/EVAL_CHECKLIST.md"
+  "examples/knowledge-workers/vendor-selection-workflow/README.md"
+  "examples/knowledge-workers/vendor-selection-workflow/MODULE_UPDATES.md"
+  "examples/knowledge-workers/vendor-selection-workflow/SKILL_EVIDENCE_CONTEXT_REFRESH.md"
+  "examples/knowledge-workers/vendor-selection-workflow/deltas/module-06.md"
+  "README.md" "PROGRESS.md"`
+
+- Next step: draft module 07 state-of-the-art research summary and
+  request approval before writing module files

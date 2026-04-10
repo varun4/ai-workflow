@@ -52,3 +52,9 @@ Track how each module changes this workflow in a demonstrable way.
   - Files: `SPEC.md`, `EVAL_CHECKLIST.md`, `README.md`
   - Validation: Pass
   - Delta: `deltas/module-05.md`
+- Module 06
+  - Concept: Skills and reusable capabilities
+  - Files: `SPEC.md`, `EVAL_CHECKLIST.md`, `README.md`,
+    `SKILL_EVIDENCE_CONTEXT_REFRESH.md`
+  - Validation: Pass
+  - Delta: `deltas/module-06.md`

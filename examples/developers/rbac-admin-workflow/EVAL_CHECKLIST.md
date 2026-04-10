@@ -38,3 +38,10 @@
 - Excluded context set removes irrelevant files and notes.
 - Source precedence is applied when context conflicts.
 - Context refresh triggers are evaluated at each checkpoint.
+
+## Skill Quality
+
+- Required skills were invoked at defined phase checkpoints.
+- Skill output artifacts were produced and logged.
+- Skill constraints and stop conditions were respected.
+- Skill verification steps were completed and recorded.

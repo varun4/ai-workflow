@@ -118,6 +118,7 @@ Track-level module deltas:
    3. [`course/modules/03-specification-precision/`](course/modules/03-specification-precision/)
    4. [`course/modules/04-scope-decomposition/`](course/modules/04-scope-decomposition/)
    5. [`course/modules/05-context-architecture/`](course/modules/05-context-architecture/)
+   6. [`course/modules/06-skills-and-reusable-capabilities/`](course/modules/06-skills-and-reusable-capabilities/)
 6. Adapt the templates in [`templates/`](templates/) for your own
    workflow
 7. Use the examples in [`examples/`](examples/) as reference

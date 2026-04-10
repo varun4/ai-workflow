@@ -14,6 +14,7 @@ work using:
 - `SPEC.md`
 - `PROGRESS.md`
 - `SKILL_EVIDENCE_REVIEW.md`
+- `SKILL_EVIDENCE_CONTEXT_REFRESH.md`
 - `EVAL_CHECKLIST.md`
 - `APPROVAL_BOUNDARIES.md`
 
@@ -23,8 +24,9 @@ work using:
 2. Execute to the brief requirements in `SPEC.md`.
 3. Log each phase in `PROGRESS.md`.
 4. Apply reusable checks in `SKILL_EVIDENCE_REVIEW.md`.
-5. Validate recommendation quality with `EVAL_CHECKLIST.md`.
-6. Stop at `APPROVAL_BOUNDARIES.md` checkpoints.
+5. Refresh phase context with `SKILL_EVIDENCE_CONTEXT_REFRESH.md`.
+6. Validate recommendation quality with `EVAL_CHECKLIST.md`.
+7. Stop at `APPROVAL_BOUNDARIES.md` checkpoints.
 
 ## Module Deltas
 
@@ -35,6 +37,7 @@ work using:
   - `deltas/module-03.md`
   - `deltas/module-04.md`
   - `deltas/module-05.md`
+  - `deltas/module-06.md`
 
 ## Learning Goal
 
