@@ -84,23 +84,6 @@ Track-level module deltas:
 - Knowledge-work deltas:
   [`examples/knowledge-workers/vendor-selection-workflow/deltas/`](examples/knowledge-workers/vendor-selection-workflow/deltas/)
 
-## Project Operating Artifacts
-
-- [`SPEC.md`](SPEC.md): current project objective, scope, constraints,
-  and success
-  criteria
-- [`SKILL_EVIDENCE_REVIEW.md`](SKILL_EVIDENCE_REVIEW.md): reusable
-  review skill for definition and
-  evidence quality
-- [`EVAL_CHECKLIST.md`](EVAL_CHECKLIST.md): project completion checklist
-- [`APPROVAL_BOUNDARIES.md`](APPROVAL_BOUNDARIES.md): ask-first and
-  approval gate actions
-- [`docs/standards/MODULE_DONE_CHECKLIST_TEMPLATE.md`](docs/standards/MODULE_DONE_CHECKLIST_TEMPLATE.md):
-  deterministic module done checklist template
-- Scope decomposition principles:
-  [`SPEC.md`](SPEC.md) and
-  [`docs/reliability/scope-decomposition.md`](docs/reliability/scope-decomposition.md)
-
 ## Start Here
 
 1. Read
