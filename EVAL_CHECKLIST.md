@@ -22,6 +22,27 @@
   - one output per task
   - explicit checkpoints and escalation gates
 
+## Evaluation Loop Quality (Blocking)
+
+- Evaluation objective is defined before execution begins.
+- Multi-step work has phase-level checkpoints with measurable pass or
+  fail criteria.
+- Blocking failures stop progression until recovery evidence is
+  recorded.
+- Approval gates block unresolved blocking failures.
+
+## Failure Pattern Management (Blocking)
+
+- Each failed checkpoint is mapped to a `FP-PROJECT-*` pattern ID.
+- Each pattern record includes:
+  - symptom
+  - root cause
+  - detection signal
+  - prevention pattern
+  - recovery action
+- Recovery action and rerun result are recorded before closure.
+- Repeated failure patterns trigger updates to workflow artifacts.
+
 ## Quality
 
 - Examples are concrete and reusable.
@@ -50,3 +71,5 @@
 - Markdown checks passed on changed files.
 - Link/path/internal reference checks completed.
 - Validation results are recorded in `PROGRESS.md`.
+- `PROGRESS.md` records checkpoint decisions and pattern IDs for failed
+  checkpoints.

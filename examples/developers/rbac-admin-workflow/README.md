@@ -38,6 +38,7 @@ delivery using:
   - `deltas/module-04.md`
   - `deltas/module-05.md`
   - `deltas/module-06.md`
+  - `deltas/module-07.md`
 
 ## Learning Goal
 

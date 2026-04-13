@@ -142,3 +142,58 @@ authorized roles can perform privileged actions.
 - role matrix schema changes
 - endpoint scope changes
 - recurring validation failures linked to stale context
+
+## Evaluation and Failure Patterns (Module 07)
+
+### Evaluation Objective
+
+Detect and stop RBAC quality failures before merge approval.
+
+### Evaluation Loop by Phase
+
+- Plan:
+  - Check: scoped endpoints and role matrix are complete.
+  - Pass condition: scope and role map are approved.
+  - Fail action: stop implementation and correct scope inputs.
+- Implement:
+  - Check: changes are limited to scoped endpoints and auth paths.
+  - Pass condition: no out-of-scope edits.
+  - Fail action: remove out-of-scope changes and rerun checkpoint.
+- Validate:
+  - Check: allow/deny auth tests and regression suite pass.
+  - Pass condition: all scoped checks pass with expected response shape.
+  - Fail action: map failure to pattern ID and execute recovery.
+- Approve:
+  - Check: no unresolved blocking failure patterns.
+  - Pass condition: security signoff and merge approval recorded.
+  - Fail action: block merge and escalate unresolved blockers.
+
+### Embedded Failure Patterns
+
+- `FP-RBAC-01` Out-of-scope endpoint change
+  - Symptom: unrelated endpoint modified.
+  - Root cause: scope boundary not enforced in Implement phase.
+  - Detection signal: diff includes non-scoped files.
+  - Prevention pattern: implement-phase scope gate.
+  - Recovery action: remove out-of-scope edits and rerun checkpoint.
+- `FP-RBAC-02` Missing deny-path enforcement
+  - Symptom: denied role gets `200` instead of `403`.
+  - Root cause: incomplete middleware mapping.
+  - Detection signal: allow/deny test failure in Validate phase.
+  - Prevention pattern: role matrix to endpoint mapping check.
+  - Recovery action: patch auth path and rerun tests.
+- `FP-RBAC-03` Approval without resolved blockers
+  - Symptom: merge requested with unresolved security finding.
+  - Root cause: approval gate bypass.
+  - Detection signal: missing signoff evidence in Approve phase.
+  - Prevention pattern: blocking approval checklist rule.
+  - Recovery action: halt merge and require reviewer signoff.
+
+### Evaluation Evidence Requirements
+
+Record in `PROGRESS.md` for each phase:
+
+- checkpoint name
+- pass/fail decision
+- failure pattern ID (if failed)
+- recovery action and rerun result

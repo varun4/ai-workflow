@@ -58,3 +58,8 @@ Track how each module changes this workflow in a demonstrable way.
     `SKILL_RBAC_CONTEXT_REFRESH.md`
   - Validation: Pass
   - Delta: `deltas/module-06.md`
+- Module 07
+  - Concept: Evaluation and failure patterns
+  - Files: `SPEC.md`, `EVAL_CHECKLIST.md`, `README.md`
+  - Validation: Pass
+  - Delta: `deltas/module-07.md`

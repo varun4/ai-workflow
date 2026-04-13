@@ -154,3 +154,66 @@ defined criteria and evidence.
 - scoring rubric changes
 - source policy changes
 - recurring evidence validation failures linked to stale context
+
+## Evaluation and Failure Patterns (Module 07)
+
+### Evaluation Objective
+
+Detect and stop evidence and recommendation quality failures before
+leadership distribution.
+
+### Evaluation Loop by Phase
+
+- Plan:
+  - Check: criteria, rubric, and approved source set are confirmed.
+  - Pass condition: planning inputs are approved.
+  - Fail action: stop evidence collection and resolve input gaps.
+- Analyze:
+  - Check: each vendor has complete evidence across all criteria.
+  - Pass condition: comparison matrix is complete and traceable.
+  - Fail action: fill missing evidence or mark scoped limitation.
+- Validate:
+  - Check: recommendation claims map to approved citations.
+  - Pass condition: no unsupported major claims remain.
+  - Fail action: map failure to pattern ID and execute recovery.
+- Approve:
+  - Check: stakeholder review and distribution approval are recorded.
+  - Pass condition: no unresolved blocking failures.
+  - Fail action: block distribution and escalate.
+
+### Embedded Failure Patterns
+
+- `FP-VENDOR-01` Non-approved source usage
+  - Symptom: claim cites source outside approved list.
+  - Root cause: source boundary not enforced in Analyze phase.
+  - Detection signal: source audit mismatch.
+  - Prevention pattern: approved-source gate before scoring.
+  - Recovery action: replace source or remove claim.
+- `FP-VENDOR-02` Rubric mismatch
+  - Symptom: scoring rationale does not match defined criteria.
+  - Root cause: rubric applied inconsistently.
+  - Detection signal: criterion-to-score traceability gap.
+  - Prevention pattern: rubric consistency check before Draft.
+  - Recovery action: rescore affected rows and update rationale.
+- `FP-VENDOR-03` Unsupported recommendation claim
+  - Symptom: recommendation statement has no approved citation.
+  - Root cause: draft written ahead of evidence validation.
+  - Detection signal: failed citation traceability check.
+  - Prevention pattern: validate claim-to-source mapping before
+    approval.
+  - Recovery action: add approved evidence or remove claim.
+- `FP-VENDOR-04` Distribution before approval
+  - Symptom: brief shared without stakeholder signoff.
+  - Root cause: approval gate bypass.
+  - Detection signal: missing approval record.
+  - Prevention pattern: hard distribution gate.
+  - Recovery action: halt distribution and complete approvals.
+
+### Evaluation Evidence Requirements
+
+Record in `PROGRESS.md` for each phase:
+
+- checkpoint name
+- pass/fail decision
+- failure pattern ID (if failed)
+- recovery action and rerun result

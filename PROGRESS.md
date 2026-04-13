@@ -559,3 +559,63 @@
 
 - Next step: draft module 07 state-of-the-art research summary and
   request approval before writing module files
+
+## 2026-04-13 - Step 25: Draft module 07 and apply track eval updates
+
+- Files changed:
+  - `course/modules/07-evaluation-and-failure-patterns/lesson.md`
+  - `course/modules/07-evaluation-and-failure-patterns/slides-outline.md`
+  - `course/modules/07-evaluation-and-failure-patterns/exercise.md`
+  - `course/modules/07-evaluation-and-failure-patterns/facilitator-notes.md`
+  - `course/modules/07-evaluation-and-failure-patterns/MODULE_DONE_CHECKLIST.md`
+  - `examples/developers/rbac-admin-workflow/SPEC.md`
+  - `examples/developers/rbac-admin-workflow/EVAL_CHECKLIST.md`
+  - `examples/developers/rbac-admin-workflow/README.md`
+  - `examples/developers/rbac-admin-workflow/MODULE_UPDATES.md`
+  - `examples/developers/rbac-admin-workflow/deltas/module-07.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/SPEC.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/EVAL_CHECKLIST.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/README.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/MODULE_UPDATES.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/deltas/module-07.md`
+  - `README.md`
+  - `PROGRESS.md`
+- Status: completed
+- SOTA research summary reviewed and approved in chat before writing
+  module files.
+
+- Validation run:
+  `pymarkdown scan
+  "course/modules/07-evaluation-and-failure-patterns/lesson.md"
+  "course/modules/07-evaluation-and-failure-patterns/slides-outline.md"
+  "course/modules/07-evaluation-and-failure-patterns/exercise.md"
+  "course/modules/07-evaluation-and-failure-patterns/facilitator-notes.md"
+  "course/modules/07-evaluation-and-failure-patterns/MODULE_DONE_CHECKLIST.md"
+  "examples/developers/rbac-admin-workflow/SPEC.md"
+  "examples/developers/rbac-admin-workflow/EVAL_CHECKLIST.md"
+  "examples/developers/rbac-admin-workflow/README.md"
+  "examples/developers/rbac-admin-workflow/MODULE_UPDATES.md"
+  "examples/developers/rbac-admin-workflow/deltas/module-07.md"
+  "examples/knowledge-workers/vendor-selection-workflow/SPEC.md"
+  "examples/knowledge-workers/vendor-selection-workflow/EVAL_CHECKLIST.md"
+  "examples/knowledge-workers/vendor-selection-workflow/README.md"
+  "examples/knowledge-workers/vendor-selection-workflow/MODULE_UPDATES.md"
+  "examples/knowledge-workers/vendor-selection-workflow/deltas/module-07.md"
+  "README.md" "PROGRESS.md"`
+
+- Next step: draft module 08 state-of-the-art research summary and
+  request approval before writing module files
+
+## 2026-04-13 - Step 26: Apply eval and failure principles to root artifacts
+
+- Files changed:
+  - `SPEC.md`
+  - `EVAL_CHECKLIST.md`
+  - `PROGRESS.md`
+- Status: completed
+
+- Validation run:
+  `pymarkdown scan "SPEC.md" "EVAL_CHECKLIST.md" "PROGRESS.md"`
+
+- Next step: draft module 08 state-of-the-art research summary and
+  request approval before writing module files

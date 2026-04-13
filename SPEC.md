@@ -34,6 +34,23 @@ knowledge workers.
 - Insert checkpoints before risky actions.
 - Define escalation and approval gates explicitly.
 
+### Evaluation and Failure Pattern Principles
+
+- Define evaluation objective and pass or fail criteria before execution.
+- For multi-step work, define phase-level checkpoints with measurable
+  pass or fail decisions.
+- Classify failures with reusable pattern IDs.
+- Use the failure pattern template:
+  - symptom
+  - root cause
+  - detection signal
+  - prevention pattern
+  - recovery action
+- Treat blocking failures as stop conditions.
+- Require recovery evidence and rerun results before phase closure.
+- Escalate unresolved blocking failures at approval gates.
+- Update workflow artifacts when failure patterns repeat.
+
 ### Module Automation Constraints
 
 - Use the module generation contract for all new module work.
@@ -54,6 +71,8 @@ knowledge workers.
 - Module content is practical, measurable, and aligned with module rules.
 - Artifacts are reusable and internally consistent.
 - Validation is run and reported before completion.
+- Evaluation decisions are traceable with explicit checkpoint outcomes.
+- Recurring failures trigger updates to prevention patterns and rules.
 
 ### Module Output Rule
 
@@ -81,3 +100,5 @@ knowledge workers.
 - Link/path/internal reference checks on changed files.
 - `PROGRESS.md` updated with step details.
 - `README.md` reviewed after each `PROGRESS.md` update.
+- Failed checkpoints include pattern ID, detection signal, and recovery
+  evidence in `PROGRESS.md`.

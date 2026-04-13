@@ -45,3 +45,19 @@
 - Skill output artifacts were produced and logged.
 - Skill constraints and stop conditions were respected.
 - Skill verification steps were completed and recorded.
+
+## Evaluation Loop Quality
+
+- Plan, Implement, Validate, and Approve phases each have explicit
+  pass/fail decisions.
+- Blocking failures stop progression until recovery evidence is
+  recorded.
+- Approval is blocked when any blocking failure remains unresolved.
+
+## Failure Pattern Checks
+
+- Every failed checkpoint is mapped to a `FP-RBAC-*` pattern ID in
+  `SPEC.md`.
+- Detection signals are recorded for each failure.
+- Recovery action and rerun result are recorded before closure.
+- Repeated failures trigger prevention updates in workflow artifacts.
