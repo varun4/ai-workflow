@@ -18,6 +18,10 @@
 - Adding legal, procurement, or security claims not in evidence.
 - Sharing draft outside approved stakeholder group.
 - Final distribution to leadership.
+- Promoting adoption from internal draft to leadership pilot.
+- Promoting adoption from leadership pilot to operational use.
+- Overriding a blocking security or adoption gate.
+- Skipping a rollback trigger after a failed gate.
 
 ## Delivery Rules
 

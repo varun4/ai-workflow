@@ -231,6 +231,21 @@ Backup rule:
   - constraints
   - verification
 
+## Presentation and Delivery Guidance
+
+- When proposing repository changes for approval, present changes in readable
+- review format by default (not raw patch/diff).
+- Required format per file:
+  1. `File:` `<path>`
+  2. `What changes:` concise bullet list of exact edits
+  3. `Why:` concise bullet list of intent/rationale
+- Additional requirements:
+  - Keep bullets concrete and testable.
+  - Reference target section names/headings where edits will be made.
+  - Do not output unified diffs unless explicitly requested
+    (e.g., "show diff" or "generate patch").
+  - End with a short validation plan listing checks to run.
+
 ## Git And Delivery Rules
 
 - Do not commit or push unless explicitly requested.

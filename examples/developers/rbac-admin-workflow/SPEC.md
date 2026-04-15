@@ -197,3 +197,63 @@ Record in `PROGRESS.md` for each phase:
 - pass/fail decision
 - failure pattern ID (if failed)
 - recovery action and rerun result
+
+## Security and Adoption Controls
+
+### Security Objective
+
+Prevent unsafe permission changes and uncontrolled rollout.
+
+### Security Control Map
+
+- Risky action: broaden admin permissions.
+  - Control rule: block change until security reviewer approves.
+  - Required approval: security reviewer signoff.
+  - Stop condition: no signoff recorded.
+- Risky action: change auth provider integration.
+  - Control rule: route to architecture review before implementation.
+  - Required approval: service owner and security owner signoff.
+  - Stop condition: architecture review not approved.
+- Risky action: deploy RBAC changes beyond approved rollout stage.
+  - Control rule: enforce stage gate before deployment.
+  - Required approval: stage owner go/no-go decision.
+  - Stop condition: gate evidence missing.
+- Risky action: release with unresolved blocking failures.
+  - Control rule: block release until blockers are resolved.
+  - Required approval: security reviewer confirms blocker closure.
+  - Stop condition: unresolved blocking `FP-RBAC-*` pattern.
+
+### Adoption Gates
+
+- Gate 1: Sandbox
+  - Entry criteria: scoped endpoints and role matrix approved.
+  - Required evidence: passing auth tests and regression report.
+  - Decision owner: implementation lead.
+  - Exit decision: go to pilot only if all blocking checks pass.
+- Gate 2: Pilot
+  - Entry criteria: sandbox gate passed with recorded evidence.
+  - Required evidence: pilot validation log with no unresolved
+    blockers.
+  - Decision owner: service owner.
+  - Exit decision: go to production only with security signoff.
+- Gate 3: Production
+  - Entry criteria: pilot gate passed and approvals recorded.
+  - Required evidence: release-readiness checklist and signoff record.
+  - Decision owner: service owner and security reviewer.
+  - Exit decision: release only if no rollback trigger is active.
+
+### Rollback Triggers
+
+- denied role receives `200` on scoped endpoint
+- unexpected permission expansion in diff or runtime behavior
+- unresolved high-severity security finding
+- missing required approval evidence at gate exit
+
+### Security and Adoption Evidence Requirements
+
+Record in `PROGRESS.md` for each gate:
+
+- gate name and decision owner
+- go/no-go decision
+- blocking failure pattern IDs (if any)
+- rollback trigger status and action taken

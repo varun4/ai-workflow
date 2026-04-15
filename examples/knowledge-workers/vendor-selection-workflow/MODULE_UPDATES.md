@@ -63,3 +63,9 @@ Track how each module changes this workflow in a demonstrable way.
   - Files: `SPEC.md`, `EVAL_CHECKLIST.md`, `README.md`
   - Validation: Pass
   - Delta: `deltas/module-07.md`
+- Module 08
+  - Concept: Security and adoption controls
+  - Files: `AGENTS.md`, `SPEC.md`, `EVAL_CHECKLIST.md`,
+    `APPROVAL_BOUNDARIES.md`, `README.md`
+  - Validation: Pass
+  - Delta: `deltas/module-08.md`

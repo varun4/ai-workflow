@@ -43,6 +43,21 @@
 - Recovery action and rerun result are recorded before closure.
 - Repeated failure patterns trigger updates to workflow artifacts.
 
+## Security Control Quality (Blocking)
+
+- High-risk actions are mapped to explicit control rules.
+- Each high-risk action has required approval and stop condition.
+- Blocking security controls are not bypassed without ask-first
+  approval.
+- Unresolved security blockers prevent completion decisions.
+
+## Adoption Gate Quality (Blocking)
+
+- Current adoption stage and next gate are explicit.
+- Gate entry criteria and required evidence are defined.
+- Named owner records each go/no-go decision.
+- Active rollback trigger blocks gate promotion until closure evidence.
+
 ## Quality
 
 - Examples are concrete and reusable.
@@ -73,3 +88,5 @@
 - Validation results are recorded in `PROGRESS.md`.
 - `PROGRESS.md` records checkpoint decisions and pattern IDs for failed
   checkpoints.
+- `PROGRESS.md` records adoption gate decisions and rollback trigger
+  status for gated work.

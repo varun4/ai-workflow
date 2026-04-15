@@ -103,6 +103,7 @@ Track-level module deltas:
    5. [`course/modules/05-context-architecture/`](course/modules/05-context-architecture/)
    6. [`course/modules/06-skills-and-reusable-capabilities/`](course/modules/06-skills-and-reusable-capabilities/)
    7. [`course/modules/07-evaluation-and-failure-patterns/`](course/modules/07-evaluation-and-failure-patterns/)
+   8. [`course/modules/08-security-and-adoption/`](course/modules/08-security-and-adoption/)
 6. Adapt the templates in [`templates/`](templates/) for your own
    workflow
 7. Use the examples in [`examples/`](examples/) as reference

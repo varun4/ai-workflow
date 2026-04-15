@@ -217,3 +217,63 @@ Record in `PROGRESS.md` for each phase:
 - pass/fail decision
 - failure pattern ID (if failed)
 - recovery action and rerun result
+
+## Security and Adoption Controls
+
+### Security Objective
+
+Prevent untrusted evidence and unsafe recommendation distribution.
+
+### Security Control Map
+
+- Risky action: use non-approved source for major claim.
+  - Control rule: block draft and validate phases until corrected.
+  - Required approval: workflow owner confirms approved source use.
+  - Stop condition: source is outside approved list.
+- Risky action: include legal or compliance claim without evidence.
+  - Control rule: require explicit citation and reviewer check.
+  - Required approval: stakeholder owner signoff.
+  - Stop condition: citation basis is missing.
+- Risky action: distribute brief outside approved group.
+  - Control rule: enforce distribution boundary gate.
+  - Required approval: stakeholder owner and director signoff.
+  - Stop condition: required signoff record is missing.
+- Risky action: proceed with unresolved blocking failures.
+  - Control rule: block adoption stage promotion.
+  - Required approval: decision owner records blocker closure.
+  - Stop condition: unresolved blocking `FP-VENDOR-*` pattern.
+
+### Adoption Gates
+
+- Gate 1: Internal Draft
+  - Entry criteria: criteria, rubric, and source set approved.
+  - Required evidence: completed traceability and quality checks.
+  - Decision owner: workflow owner.
+  - Exit decision: go to leadership pilot only if blockers are clear.
+- Gate 2: Limited Leadership Pilot
+  - Entry criteria: internal draft gate passed with evidence.
+  - Required evidence: pilot review notes and approval record.
+  - Decision owner: stakeholder owner.
+  - Exit decision: go operational only with director signoff.
+- Gate 3: Operational Use
+  - Entry criteria: leadership pilot gate passed.
+  - Required evidence: distribution boundary check and approvals.
+  - Decision owner: stakeholder owner and director.
+  - Exit decision: operational use only if no rollback trigger is
+    active.
+
+### Rollback Triggers
+
+- unsupported major recommendation claim
+- non-approved source used in final brief
+- confidentiality boundary breach
+- missing required approval record at gate exit
+
+### Security and Adoption Evidence Requirements
+
+Record in `PROGRESS.md` for each gate:
+
+- gate name and decision owner
+- go/no-go decision
+- blocking failure pattern IDs (if any)
+- rollback trigger status and action taken

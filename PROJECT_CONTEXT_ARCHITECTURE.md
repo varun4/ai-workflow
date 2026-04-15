@@ -28,6 +28,9 @@ Before module generation, define:
 5. refresh triggers
 6. context owners by phase
 7. validation checks
+8. security control map
+9. adoption gate state
+10. rollback context
 
 ## Required Context (Default)
 
@@ -39,6 +42,8 @@ Before module generation, define:
 - `SKILL_EVIDENCE_REVIEW.md`
 - `PROGRESS.md`
 - `docs/standards/MODULE_DONE_CHECKLIST_TEMPLATE.md`
+- `docs/governance/security.md`
+- `docs/governance/approvals-and-boundaries.md`
 - active module folder: `course/modules/NN-*`
 - both track workflows:
   - `examples/developers/rbac-admin-workflow/`
@@ -71,7 +76,43 @@ Load these exact rules from these exact locations:
 - Definition-first writing rule:
   - `SPEC.md` -> `### Module Automation Constraints`
   - `EVAL_CHECKLIST.md` -> `## Module Quality Gates (Blocking)`
+- Security and adoption rules:
+  - `docs/governance/security.md`
+  - `docs/governance/approvals-and-boundaries.md`
+  - `APPROVAL_BOUNDARIES.md`
 If any referenced heading is missing or renamed, stop and ask.
+
+## Security and Adoption Build Context (Required)
+
+### Security Control Map
+
+For active work, include:
+
+- risky action
+- control rule
+- required approval
+- stop condition
+- failure pattern ID (when applicable)
+
+### Adoption Gate State
+
+For active work, include:
+
+- current stage: `sandbox`, `pilot`, or `operational`
+- next gate being considered
+- gate owner
+- entry criteria
+- required evidence
+- go/no-go rule
+
+### Rollback Context
+
+For active work, include:
+
+- active rollback triggers
+- rollback owner
+- required immediate action when trigger is active
+- closure evidence required to clear trigger
 
 ## Source Precedence (Conflict Resolution)
 
@@ -125,6 +166,11 @@ Rebuild context package when any of these occur:
   - `APPROVAL_BOUNDARIES.md`
   - `EVAL_CHECKLIST.md`
   - `SKILL_EVIDENCE_REVIEW.md`
+  - `docs/governance/security.md`
+  - `docs/governance/approvals-and-boundaries.md`
+- adoption stage changes (`sandbox`, `pilot`, `operational`)
+- adoption gate override is requested
+- rollback trigger is activated or cleared
 - validation failure occurs
 - source conflict is detected
 - before setting `MODULE_DONE_CHECKLIST.md` to PASS
@@ -138,4 +184,7 @@ Before writing:
 Before completion:
 - refresh triggers were evaluated
 - no unresolved source conflicts remain
+- active security controls were applied for risky actions
+- adoption gate decision and owner were recorded
+- rollback trigger status and action were recorded
 - context decisions and validation are logged in `PROGRESS.md`

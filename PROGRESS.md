@@ -606,6 +606,77 @@
 - Next step: draft module 08 state-of-the-art research summary and
   request approval before writing module files
 
+## 2026-04-15 - Step 28: Apply security and adoption context to root build rules
+
+- Files changed:
+  - `PROJECT_CONTEXT_ARCHITECTURE.md`
+  - `SPEC.md`
+  - `EVAL_CHECKLIST.md`
+  - `APPROVAL_BOUNDARIES.md`
+  - `PROGRESS.md`
+- Status: completed
+
+- Validation run:
+  `pymarkdown scan "PROJECT_CONTEXT_ARCHITECTURE.md" "SPEC.md"
+  "EVAL_CHECKLIST.md" "APPROVAL_BOUNDARIES.md" "PROGRESS.md"`
+
+- Next step: run final repository quality pass and package release
+  summary
+
+## 2026-04-15 - Step 27: Draft module 08 and apply track security controls
+
+- Files changed:
+  - `course/modules/08-security-and-adoption/lesson.md`
+  - `course/modules/08-security-and-adoption/slides-outline.md`
+  - `course/modules/08-security-and-adoption/exercise.md`
+  - `course/modules/08-security-and-adoption/facilitator-notes.md`
+  - `course/modules/08-security-and-adoption/MODULE_DONE_CHECKLIST.md`
+  - `examples/developers/rbac-admin-workflow/AGENTS.md`
+  - `examples/developers/rbac-admin-workflow/SPEC.md`
+  - `examples/developers/rbac-admin-workflow/EVAL_CHECKLIST.md`
+  - `examples/developers/rbac-admin-workflow/APPROVAL_BOUNDARIES.md`
+  - `examples/developers/rbac-admin-workflow/README.md`
+  - `examples/developers/rbac-admin-workflow/MODULE_UPDATES.md`
+  - `examples/developers/rbac-admin-workflow/deltas/module-08.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/AGENTS.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/SPEC.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/EVAL_CHECKLIST.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/APPROVAL_BOUNDARIES.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/README.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/MODULE_UPDATES.md`
+  - `examples/knowledge-workers/vendor-selection-workflow/deltas/module-08.md`
+  - `README.md`
+  - `PROGRESS.md`
+- Status: completed
+- SOTA research summary reviewed and approved in chat before writing
+  module files.
+
+- Validation run:
+  `pymarkdown scan
+  "course/modules/08-security-and-adoption/lesson.md"
+  "course/modules/08-security-and-adoption/slides-outline.md"
+  "course/modules/08-security-and-adoption/exercise.md"
+  "course/modules/08-security-and-adoption/facilitator-notes.md"
+  "course/modules/08-security-and-adoption/MODULE_DONE_CHECKLIST.md"
+  "examples/developers/rbac-admin-workflow/AGENTS.md"
+  "examples/developers/rbac-admin-workflow/SPEC.md"
+  "examples/developers/rbac-admin-workflow/EVAL_CHECKLIST.md"
+  "examples/developers/rbac-admin-workflow/APPROVAL_BOUNDARIES.md"
+  "examples/developers/rbac-admin-workflow/README.md"
+  "examples/developers/rbac-admin-workflow/MODULE_UPDATES.md"
+  "examples/developers/rbac-admin-workflow/deltas/module-08.md"
+  "examples/knowledge-workers/vendor-selection-workflow/AGENTS.md"
+  "examples/knowledge-workers/vendor-selection-workflow/SPEC.md"
+  "examples/knowledge-workers/vendor-selection-workflow/EVAL_CHECKLIST.md"
+  "examples/knowledge-workers/vendor-selection-workflow/APPROVAL_BOUNDARIES.md"
+  "examples/knowledge-workers/vendor-selection-workflow/README.md"
+  "examples/knowledge-workers/vendor-selection-workflow/MODULE_UPDATES.md"
+  "examples/knowledge-workers/vendor-selection-workflow/deltas/module-08.md"
+  "README.md" "PROGRESS.md"`
+
+- Next step: package final course completion summary and run final
+  repository quality pass
+
 ## 2026-04-13 - Step 26: Apply eval and failure principles to root artifacts
 
 - Files changed:

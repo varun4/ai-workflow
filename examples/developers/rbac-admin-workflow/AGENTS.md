@@ -19,6 +19,10 @@
 - Making database schema changes.
 - Disabling existing security checks.
 - Merging or deploying changes.
+- Promoting rollout from sandbox to pilot.
+- Promoting rollout from pilot to production.
+- Overriding a blocking security or adoption gate.
+- Skipping a rollback trigger after a failed gate.
 
 ## Delivery Rules
 

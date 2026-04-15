@@ -61,3 +61,18 @@
 - Detection signals are recorded for each failure.
 - Recovery action and rerun result are recorded before closure.
 - Repeated failures trigger prevention updates in workflow artifacts.
+
+## Security Control Checks
+
+- High-risk actions map to explicit controls in `SPEC.md`.
+- Ask-first boundaries were enforced before risky actions.
+- No permission broadening occurred without required signoff.
+- Release is blocked when unresolved blocking failures exist.
+
+## Adoption Gate Checks
+
+- Sandbox gate evidence is recorded before pilot entry.
+- Pilot gate evidence is recorded before production entry.
+- Gate decisions include named owner and go/no-go outcome.
+- Rollback triggers were evaluated before each gate exit.
+- Production release is blocked when gate evidence is incomplete.

@@ -22,6 +22,8 @@ knowledge workers.
 - Follow definition-first writing.
 - Follow `PROJECT_CONTEXT_ARCHITECTURE.md` for context package design,
   source precedence, phase owners, and refresh triggers.
+- Apply explicit security controls and adoption gates for repository
+  workflow changes.
 - Keep shared framework in `docs/` and split by audience mainly in
   `tracks/`, `templates/`, and `examples/`.
 
@@ -51,6 +53,21 @@ knowledge workers.
 - Escalate unresolved blocking failures at approval gates.
 - Update workflow artifacts when failure patterns repeat.
 
+### Security and Adoption Principles
+
+- Define high-risk actions and map each to:
+  - control rule
+  - required approval
+  - stop condition
+- Use least-privilege defaults for tool use and scope.
+- Use staged adoption gates:
+  - `sandbox`
+  - `pilot`
+  - `operational`
+- Require a named owner and evidence for each go/no-go decision.
+- Treat active rollback triggers as blocking until closure evidence is
+  recorded.
+
 ### Module Automation Constraints
 
 - Use the module generation contract for all new module work.
@@ -73,6 +90,10 @@ knowledge workers.
 - Validation is run and reported before completion.
 - Evaluation decisions are traceable with explicit checkpoint outcomes.
 - Recurring failures trigger updates to prevention patterns and rules.
+- Security controls are explicit for high-risk actions.
+- Adoption gate decisions are evidence-backed and owner-recorded.
+- Active rollback triggers block completion until closure evidence
+  exists.
 
 ### Module Output Rule
 
@@ -102,3 +123,5 @@ knowledge workers.
 - `README.md` reviewed after each `PROGRESS.md` update.
 - Failed checkpoints include pattern ID, detection signal, and recovery
   evidence in `PROGRESS.md`.
+- `PROGRESS.md` includes adoption stage, gate owner decision, and
+  rollback trigger status for gated work.

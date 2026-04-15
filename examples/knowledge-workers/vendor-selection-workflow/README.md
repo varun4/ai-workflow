@@ -27,6 +27,7 @@ work using:
 5. Refresh phase context with `SKILL_EVIDENCE_CONTEXT_REFRESH.md`.
 6. Validate recommendation quality with `EVAL_CHECKLIST.md`.
 7. Stop at `APPROVAL_BOUNDARIES.md` checkpoints.
+8. Apply security and adoption gate decisions from `SPEC.md`.
 
 ## Module Deltas
 
@@ -39,6 +40,7 @@ work using:
   - `deltas/module-05.md`
   - `deltas/module-06.md`
   - `deltas/module-07.md`
+  - `deltas/module-08.md`
 
 ## Learning Goal
 
