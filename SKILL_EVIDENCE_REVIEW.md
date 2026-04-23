@@ -2,13 +2,13 @@
 
 ## Purpose
 
-Review course content for definition clarity, evidence support, and
-testable claims.
+Review content for definition clarity, evidence support, and testable
+claims.
 
 ## Inputs
 
 - changed module/docs/template/example files
-- source references used in the change
+- sources used in the change
 
 ## Outputs
 

@@ -20,108 +20,87 @@ knowledge workers.
 
 - Follow preview-first content approval.
 - Follow definition-first writing.
-- Follow `PROJECT_CONTEXT_ARCHITECTURE.md` for context package design,
-  source precedence, phase owners, and refresh triggers.
-- Apply explicit security controls and adoption gates for repository
-  workflow changes.
+- Use `PROJECT_CONTEXT_ARCHITECTURE.md` for context package design,
+  source precedence, owners, and refresh triggers.
+- Use `APPROVAL_BOUNDARIES.md` for ask-first and stop conditions.
+- Use `EVAL_CHECKLIST.md` for blocking gates and validation evidence.
 - Keep shared framework in `docs/` and split by audience mainly in
   `tracks/`, `templates/`, and `examples/`.
 
 ### Scope Decomposition Principles
 
-- Separate architecture from implementation.
-- Separate scaffold from content depth.
-- Break work into bounded phases and tasks.
-- Keep one concrete output per task.
-- Insert checkpoints before risky actions.
-- Define escalation and approval gates explicitly.
+For multi-step work:
+
+- use bounded phases and tasks
+- keep one concrete output per task
+- insert explicit checkpoints before risky actions
+
+Reference: `docs/reliability/scope-decomposition.md`.
 
 ### Evaluation and Failure Pattern Principles
 
-- Define evaluation objective and pass or fail criteria before execution.
-- For multi-step work, define phase-level checkpoints with measurable
-  pass or fail decisions.
-- Classify failures with reusable pattern IDs.
-- Use the failure pattern template:
-  - symptom
-  - root cause
-  - detection signal
-  - prevention pattern
-  - recovery action
-- Treat blocking failures as stop conditions.
-- Require recovery evidence and rerun results before phase closure.
-- Escalate unresolved blocking failures at approval gates.
+- Define evaluation objective and pass/fail criteria before execution.
+- Map failed checkpoints to `FP-PROJECT-*` pattern IDs.
+- Record symptom, root cause, detection signal, prevention pattern, and
+  recovery action for each blocking failure.
+- Stop progression until recovery evidence and rerun results exist.
 - Update workflow artifacts when failure patterns repeat.
+
+Reference: `docs/reliability/failure-patterns.md`.
 
 ### Security and Adoption Principles
 
-- Define high-risk actions and map each to:
-  - control rule
-  - required approval
-  - stop condition
-- Use least-privilege defaults for tool use and scope.
-- Use staged adoption gates:
-  - `sandbox`
-  - `pilot`
-  - `operational`
-- Require a named owner and evidence for each go/no-go decision.
-- Treat active rollback triggers as blocking until closure evidence is
-  recorded.
+- Map each high-risk action to control rule, required approval, and stop
+  condition.
+- Use least-privilege defaults and staged adoption gates:
+  `sandbox`, `pilot`, `operational`.
+- Record named owner decisions and rollback trigger status.
+
+Reference: `docs/governance/security.md` and
+`docs/governance/approvals-and-boundaries.md`.
 
 ### Module Automation Constraints
 
-- Use the module generation contract for all new module work.
-- Use `docs/standards/MODULE_DONE_CHECKLIST_TEMPLATE.md` and keep one
-  `MODULE_DONE_CHECKLIST.md` instance in every module folder.
-- Apply definition-first writing in all module content:
+- Use the module generation contract in `AGENTS.md`.
+- Use one `MODULE_DONE_CHECKLIST.md` per module from
+  `docs/standards/MODULE_DONE_CHECKLIST_TEMPLATE.md`.
+- Apply definition-first writing in this sequence:
   1. definition
   2. concrete example
   3. optional metaphor
   4. practical implication
-- Apply scope decomposition for multi-step module work:
-  - bounded phases and tasks
-  - one output per task
-  - explicit checkpoints
+- Apply scope decomposition principles for multi-step module work.
 
 ## Success Criteria
 
-- Module content is practical, measurable, and aligned with module rules.
+- Module content is practical, measurable, and aligned with module
+  rules.
 - Artifacts are reusable and internally consistent.
 - Validation is run and reported before completion.
 - Evaluation decisions are traceable with explicit checkpoint outcomes.
 - Recurring failures trigger updates to prevention patterns and rules.
-- Security controls are explicit for high-risk actions.
-- Adoption gate decisions are evidence-backed and owner-recorded.
-- Active rollback triggers block completion until closure evidence
-  exists.
+- Security controls and adoption gate decisions are explicit.
 
 ### Module Output Rule
 
-- Every module must produce concrete updates to both track workflows:
-  `examples/developers/rbac-admin-workflow/` and
-  `examples/knowledge-workers/vendor-selection-workflow/`.
-- For each module, update the relevant workflow artifacts, record deltas
-  in each track's `MODULE_UPDATES.md`, and log completion in
-  `PROGRESS.md`.
-- A module is not complete until both track workflows reflect the module
-  concept with validated, traceable changes.
+Canonical output rule: `AGENTS.md` -> `## Module Output Rule`.
+
+For this project, module work must update both track workflows, both
+`deltas/module-NN.md` files, both `MODULE_UPDATES.md` files, and
+`PROGRESS.md`.
 
 ### Module Completion Criteria
 
-- A module is complete only when all of the following are true:
-  - required module files are present and aligned
-  - both track workflows are updated for the module concept
-  - both `deltas/module-0X.md` files exist and are linked
-  - both `MODULE_UPDATES.md` files are updated
-  - validation is run and recorded in `PROGRESS.md`
+A module is complete only when deterministic checks in
+`docs/standards/MODULE_DONE_CHECKLIST_TEMPLATE.md` pass and blocking
+quality/output gates in `EVAL_CHECKLIST.md` pass.
 
 ## Validation
 
-- Approved markdown checks on changed files.
-- Link/path/internal reference checks on changed files.
-- `PROGRESS.md` updated with step details.
-- `README.md` reviewed after each `PROGRESS.md` update.
-- Failed checkpoints include pattern ID, detection signal, and recovery
-  evidence in `PROGRESS.md`.
-- `PROGRESS.md` includes adoption stage, gate owner decision, and
-  rollback trigger status for gated work.
+- Run markdown checks on changed files.
+- Run link/path/internal reference checks with
+  `python3 scripts/check_markdown_links.py .`.
+- Run context duplication checks with
+  `python3 scripts/check_context_duplication.py` when context files
+  change.
+- Record validation commands and results in `PROGRESS.md`.

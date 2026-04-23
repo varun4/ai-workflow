@@ -3,7 +3,8 @@
 ## Goal
 
 - Complete and operationalize the artifact-driven AI Workflow Course repository.
-- Latest completed objective: ship Module 08 (Security and Adoption) and propagate its controls into root operating artifacts.
+- Latest completed objective: ship Module 08 (Security and Adoption)
+  and propagate its controls into root operating artifacts.
 
 ## Execution Rules Followed
 
@@ -22,13 +23,16 @@
   - `course/modules/08-security-and-adoption/slides-outline.md`
   - `course/modules/08-security-and-adoption/exercise.md`
   - `course/modules/08-security-and-adoption/facilitator-notes.md`
-  - `course/modules/08-security-and-adoption/MODULE_DONE_CHECKLIST.md` set to PASS
+  - `course/modules/08-security-and-adoption/MODULE_DONE_CHECKLIST.md`
+    set to PASS
 - Module 08 was applied to both tracks, including:
-  - updates to `AGENTS.md`, `SPEC.md`, `EVAL_CHECKLIST.md`, `APPROVAL_BOUNDARIES.md`, `README.md`, `MODULE_UPDATES.md`
+  - updates to `AGENTS.md`, `SPEC.md`, `EVAL_CHECKLIST.md`,
+    `APPROVAL_BOUNDARIES.md`, `README.md`, `MODULE_UPDATES.md`
   - new delta files:
     - `examples/developers/rbac-admin-workflow/deltas/module-08.md`
     - `examples/knowledge-workers/vendor-selection-workflow/deltas/module-08.md`
-- Root repo operating layer was updated for Module 08 security/adoption controls:
+- Root repo operating layer was updated for Module 08
+  security/adoption controls:
   - `PROJECT_CONTEXT_ARCHITECTURE.md`
   - `SPEC.md`
   - `EVAL_CHECKLIST.md`
@@ -46,7 +50,8 @@
 ## Current Status
 
 - No active in-progress changes were identified at handoff.
-- Repository now includes security/adoption gates and rollback-aware workflow context at both root and track levels.
+- Repository now includes security/adoption gates and
+  rollback-aware workflow context at both root and track levels.
 
 ## Optional Follow-Ups
 

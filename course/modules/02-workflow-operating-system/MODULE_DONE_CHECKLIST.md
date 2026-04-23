@@ -8,6 +8,10 @@
 - [x] `facilitator-notes.md` exists
 
 - [x] `lesson.md` has required headings
+- [x] `slides-outline.md` is aligned to lesson flow
+- [x] `slides-outline.md` includes an exercise instruction slide
+- [x] `slides-outline.md` includes a bridge slide
+      (next module or course close)
 - [x] `exercise.md` has required headings
 - [x] `facilitator-notes.md` has required headings
 
@@ -23,14 +27,16 @@
 - [x] at least one knowledge-worker workflow artifact updated for this
       module
 
-- [x] `PROGRESS.md` includes module completion entry with validation run
+- [x] `PROGRESS.md` or linked archive includes module completion
+      entry with validation run
 - [x] `README.md` updated if module index or references changed
 - [x] markdown validation passed on changed files
+- [x] link/path/internal reference checks passed
 
 ## Validation Commands Used
 
 - `pymarkdown scan <changed-files>`
-- `pymarkdown scan <module-02 changed files>`
+- `python3 scripts/check_markdown_links.py .`
 
 ## Completion Decision
 

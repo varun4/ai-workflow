@@ -2,25 +2,32 @@
 
 ## Canonical Rule
 
-This file is the single source of truth for project-level context
-package rules, source precedence, context owners, and refresh triggers.
-Other files should reference this file, not duplicate its rules.
+This file defines how context is packaged and refreshed.
+Normative policy text must live in one owner file.
+Other files should reference owner files instead of restating rules.
 
 ## Agent Context Source Policy
 
-- Agents must load operating context from `AGENTS.md` and the operating
-  files referenced there.
-- `README.md` is for human onboarding and navigation only.
-- `README.md` is not an authoritative policy source for agent execution.
+- Load required sources from `AGENTS.md` -> `Required Context Sources`.
+- Treat `README.md` as human onboarding only.
+- If a required heading is missing, stop and ask.
 
-## Purpose
+## Rule Ownership Matrix
 
-Define how context is selected, ordered, refreshed, and validated before
-module generation and track workflow updates.
+- Execution protocol and precedence: `AGENTS.md`
+- Objective, scope, constraints, success criteria: `SPEC.md`
+- Ask-first actions and stop conditions: `APPROVAL_BOUNDARIES.md`
+- Quality gates and validation evidence: `EVAL_CHECKLIST.md`
+- Evidence review method: `SKILL_EVIDENCE_REVIEW.md`
+- Deterministic module done checks:
+  `docs/standards/MODULE_DONE_CHECKLIST_TEMPLATE.md`
+- Security guidance: `docs/governance/security.md`
+- Boundary guidance: `docs/governance/approvals-and-boundaries.md`
 
 ## Context Package Contract (Required)
 
-Before module generation, define:
+Before module work, define:
+
 1. required context
 2. excluded context
 3. persistent context
@@ -32,144 +39,29 @@ Before module generation, define:
 9. adoption gate state
 10. rollback context
 
-## Required Context (Default)
-
-- `AGENTS.md`
-- `PROJECT_CONTEXT_ARCHITECTURE.md`
-- `SPEC.md`
-- `APPROVAL_BOUNDARIES.md`
-- `EVAL_CHECKLIST.md`
-- `SKILL_EVIDENCE_REVIEW.md`
-- `PROGRESS.md`
-- `docs/standards/MODULE_DONE_CHECKLIST_TEMPLATE.md`
-- `docs/governance/security.md`
-- `docs/governance/approvals-and-boundaries.md`
-- active module folder: `course/modules/NN-*`
-- both track workflows:
-  - `examples/developers/rbac-admin-workflow/`
-  - `examples/knowledge-workers/vendor-selection-workflow/`
-
-## Excluded Context (Default)
-
-- unrelated module folders not in current scope
-- stale drafts without approved status
-- generated exports not required by module contract
-- unrelated historical notes not referenced by current task
-
-## Persistent Context (Always Loaded, Reference-Backed)
-
-Load these exact rules from these exact locations:
-- Repository purpose and scope:
-  - `AGENTS.md` -> `## Repository Purpose`
-  - `AGENTS.md` -> `## Scope`
-- Module generation contract:
-  - `AGENTS.md` -> `## Module Generation Contract Rule`
-- Module output rule:
-  - `AGENTS.md` -> `## Module Output Rule`
-  - `SPEC.md` -> `### Module Output Rule`
-- Automation verification rule:
-  - `AGENTS.md` -> `## Automation Verification Rule`
-  - `EVAL_CHECKLIST.md` -> `## Module Quality Gates (Blocking)`
-  - `EVAL_CHECKLIST.md` -> `## Module Output Gates (Blocking)`
-- Crisp language rule:
-  - `AGENTS.md` -> `## Crisp Language Rule`
-- Definition-first writing rule:
-  - `SPEC.md` -> `### Module Automation Constraints`
-  - `EVAL_CHECKLIST.md` -> `## Module Quality Gates (Blocking)`
-- Security and adoption rules:
-  - `docs/governance/security.md`
-  - `docs/governance/approvals-and-boundaries.md`
-  - `APPROVAL_BOUNDARIES.md`
-If any referenced heading is missing or renamed, stop and ask.
-
-## Security and Adoption Build Context (Required)
-
-### Security Control Map
-
-For active work, include:
-
-- risky action
-- control rule
-- required approval
-- stop condition
-- failure pattern ID (when applicable)
-
-### Adoption Gate State
-
-For active work, include:
-
-- current stage: `sandbox`, `pilot`, or `operational`
-- next gate being considered
-- gate owner
-- entry criteria
-- required evidence
-- go/no-go rule
-
-### Rollback Context
-
-For active work, include:
-
-- active rollback triggers
-- rollback owner
-- required immediate action when trigger is active
-- closure evidence required to clear trigger
-
 ## Source Precedence (Conflict Resolution)
 
-If sources conflict, resolve in this order:
+Use the same precedence as `AGENTS.md`:
+
 1. `AGENTS.md`
-2. `PROJECT_CONTEXT_ARCHITECTURE.md`
-3. `APPROVAL_BOUNDARIES.md`
-4. `EVAL_CHECKLIST.md`
-5. `SPEC.md`
-6. active module files under `course/modules/NN-*`
-7. active track workflow files under `examples/...`
-8. `PROGRESS.md`
-`README.md` is excluded from policy precedence.
+2. `APPROVAL_BOUNDARIES.md`
+3. `EVAL_CHECKLIST.md`
+4. `SPEC.md`
+5. active module files under `course/modules/NN-*`
+6. active track workflow files under `examples/...`
+7. `PROGRESS.md`
+
+This file does not override precedence.
 If conflict remains unresolved, stop and ask.
-
-## Context Owners by Workflow Phase
-
-### Phase 1: SOTA Research
-
-- Owner: module-generation agent
-- Accountability: source quality and completeness
-
-### Phase 2: Module Drafting
-
-- Owner: module-generation agent
-- Accountability: contract-compliant module content
-
-### Phase 3: Track Workflow Updates
-
-- Owner: workflow-update agent
-- Accountability: both track updates and delta files
-
-### Phase 4: Validation and Checklist
-
-- Owner: validation agent
-- Accountability: quality gates and PASS/FAIL checklist integrity
-
-### Phase 5: Approval and Delivery
-
-- Owner: human maintainer
-- Accountability: final approval and commit/push decision
 
 ## Refresh Triggers (Mandatory Rebuild)
 
-Rebuild context package when any of these occur:
+Rebuild the context package when any of these occur:
+
 - module scope or module number changes
 - SOTA summary is approved
-- any change to:
-  - `AGENTS.md`
-  - `SPEC.md`
-  - `APPROVAL_BOUNDARIES.md`
-  - `EVAL_CHECKLIST.md`
-  - `SKILL_EVIDENCE_REVIEW.md`
-  - `docs/governance/security.md`
-  - `docs/governance/approvals-and-boundaries.md`
+- source files in the ownership matrix change
 - adoption stage changes (`sandbox`, `pilot`, `operational`)
-- adoption gate override is requested
 - rollback trigger is activated or cleared
 - validation failure occurs
 - source conflict is detected
@@ -178,13 +70,21 @@ Rebuild context package when any of these occur:
 ## Validation Requirements
 
 Before writing:
+
 - context package is defined and complete
-- source precedence is present
-- active module and both tracks are included
+- active module and both track workflows are included
+
 Before completion:
+
 - refresh triggers were evaluated
 - no unresolved source conflicts remain
 - active security controls were applied for risky actions
 - adoption gate decision and owner were recorded
 - rollback trigger status and action were recorded
 - context decisions and validation are logged in `PROGRESS.md`
+
+## Anti-Duplication Rule
+
+If a rule already exists in an owner file, reference it by path and
+heading.
+Do not duplicate the same normative bullet list in another context file.

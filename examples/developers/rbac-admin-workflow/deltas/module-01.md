@@ -32,3 +32,24 @@
 - Reliability gain: reduced ambiguity before implementation.
 - Risk reduced: scope drift during early planning.
 - Remaining gap: deeper validation criteria added in later modules.
+
+## 2026-04-23 Remediation Update
+
+### Trigger
+
+- Course module 01 slide contract and checklist wording were revised.
+
+### Track Artifact Updates
+
+- `examples/developers/rbac-admin-workflow/MODULE_UPDATES.md`
+- `examples/developers/rbac-admin-workflow/deltas/module-01.md`
+
+### Exception Record
+
+- No RBAC workflow behavior or policy artifact changed.
+- This remediation is documentation alignment for module governance.
+
+### Remediation Validation Evidence
+
+- `pymarkdown scan -r "."`
+- `./scripts/validate_markdown.sh`

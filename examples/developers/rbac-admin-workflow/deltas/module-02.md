@@ -36,3 +36,24 @@
 - Reliability gain: repeatable execution path.
 - Risk reduced: unapproved security-impacting changes.
 - Remaining gap: spec precision tightened in Module 03.
+
+## 2026-04-23 Remediation Update
+
+### Trigger
+
+- Course module 02 slide contract and checklist wording were revised.
+
+### Track Artifact Updates
+
+- `examples/developers/rbac-admin-workflow/MODULE_UPDATES.md`
+- `examples/developers/rbac-admin-workflow/deltas/module-02.md`
+
+### Exception Record
+
+- No RBAC workflow behavior or policy artifact changed.
+- This remediation is documentation alignment for module governance.
+
+### Remediation Validation Evidence
+
+- `pymarkdown scan -r "."`
+- `./scripts/validate_markdown.sh`

@@ -7,10 +7,10 @@
 
 ## Slide 2: Why Teams Need One
 
-- Drift without structure
-- Hidden assumptions
-- Weak handoffs
-- Unsafe actions
+- drift without structure
+- hidden assumptions
+- weak handoffs
+- unsafe actions
 
 ## Slide 3: The Five Core Artifacts
 
@@ -83,6 +83,15 @@ flowchart LR
 - vendor recommendation brief
 - artifacts mapped end to end
 
-## Slide 13: Discussion
+## Slide 13: Exercise Instructions
+
+- map one real workflow to all five artifacts
+- identify one missing artifact and remediation action
+
+## Slide 14: Discussion
 
 - what artifact is weakest in your workflow today?
+
+## Slide 15: Bridge to Module 03
+
+- from operating artifacts to specification precision

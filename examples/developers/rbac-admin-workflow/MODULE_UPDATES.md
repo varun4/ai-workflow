@@ -31,12 +31,16 @@ Track how each module changes this workflow in a demonstrable way.
   - Files: `SPEC.md`, `README.md`
   - Validation: Pass
   - Delta: `deltas/module-01.md`
+  - Remediation (2026-04-23): slide-contract/checklist sync logged in
+    delta; no RBAC workflow behavior change (exception recorded).
 - Module 02
   - Concept: Workflow operating system artifacts
   - Files: `AGENTS.md`, `PROGRESS.md`, `EVAL_CHECKLIST.md`,
     `APPROVAL_BOUNDARIES.md`, `README.md`
   - Validation: Pass
   - Delta: `deltas/module-02.md`
+  - Remediation (2026-04-23): slide-contract/checklist sync logged in
+    delta; no RBAC workflow behavior change (exception recorded).
 - Module 03
   - Concept: Specification precision
   - Files: `SPEC.md`, `EVAL_CHECKLIST.md`

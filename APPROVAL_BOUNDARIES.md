@@ -1,5 +1,12 @@
 # Project Approval Boundaries
 
+## Canonical Rule
+
+This file is the canonical source for ask-first actions and stop
+conditions.
+Other files should reference this file instead of restating boundary
+lists.
+
 ## Ask-First Actions
 
 - Install dependencies or packages.
@@ -21,7 +28,7 @@
 
 ## Validation Boundary
 
-- If expected checker is unavailable, stop and ask.
+- If an expected checker is unavailable, stop and ask.
 - Use manual validation only with explicit user approval.
 
 ## Security and Adoption Boundary
@@ -37,8 +44,10 @@
 - Stop and ask if SOTA research evidence is missing.
 - Stop and ask if required module contract sections are missing.
 - Stop and ask if either track workflow update is incomplete.
-- Stop and ask if validation fails or expected checker is unavailable.
+- Stop and ask if validation fails or an expected checker is
+  unavailable.
 - Do not mark a module complete until all module output gates pass.
-- Stop and ask if project context package is missing, stale, or has unresolved conflicts.
+- Stop and ask if the project context package is missing, stale, or has
+  unresolved conflicts.
 - Stop and ask if security control map, adoption gate evidence, or
   rollback status is missing for active work.

@@ -179,8 +179,6 @@ Then move into the audience-specific templates that match your work.
 ## Roadmap
 
 - Expand the developer and knowledge-worker template packs
-- Build out the remaining modules in
-  [`course/modules/`](course/modules/)
 - Add deeper end-to-end case studies
 - Add reusable skills to [`skills/`](skills/)
 - Package the material into workshop and session sequences
@@ -201,3 +199,5 @@ Then move into the audience-specific templates that match your work.
   preview-first review workflow.
 - Agent policy and context-loading rules are maintained in
   [`AGENTS.md`](AGENTS.md).
+- Markdown, link, and context-duplication validation can be run with
+  `./scripts/validate_markdown.sh`.

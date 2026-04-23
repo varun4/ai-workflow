@@ -16,7 +16,7 @@
   `PROJECT_CONTEXT_ARCHITECTURE.md`.
 - Preview-first approval was followed.
 - Definition-first writing was applied.
-- Ask-first boundaries were respected.
+- Ask-first boundaries from `APPROVAL_BOUNDARIES.md` were respected.
 - Scope decomposition principles were applied for multi-step work:
   - bounded phases and tasks
   - one output per task
@@ -25,8 +25,8 @@
 ## Evaluation Loop Quality (Blocking)
 
 - Evaluation objective is defined before execution begins.
-- Multi-step work has phase-level checkpoints with measurable pass or
-  fail criteria.
+- Multi-step work has phase-level checkpoints with measurable pass/fail
+  criteria.
 - Blocking failures stop progression until recovery evidence is
   recorded.
 - Approval gates block unresolved blocking failures.
@@ -41,7 +41,7 @@
   - prevention pattern
   - recovery action
 - Recovery action and rerun result are recorded before closure.
-- Repeated failure patterns trigger updates to workflow artifacts.
+- Repeated failure patterns trigger workflow artifact updates.
 
 ## Security Control Quality (Blocking)
 
@@ -56,7 +56,8 @@
 - Current adoption stage and next gate are explicit.
 - Gate entry criteria and required evidence are defined.
 - Named owner records each go/no-go decision.
-- Active rollback trigger blocks gate promotion until closure evidence.
+- Active rollback trigger blocks gate promotion until closure evidence
+  exists.
 
 ## Quality
 
@@ -69,22 +70,30 @@
 - Definition-first sequence is applied to core concepts.
 - Learning objectives are measurable and action-oriented.
 - Vague language is removed or tied to explicit criteria.
-- Module generation contract sections are complete and aligned.
+- Module generation contract sections are complete and aligned:
+  - lesson required sections
+  - slides include exercise instructions and bridge
+  - exercise required sections
+  - facilitator-notes required sections
 
 ## Module Output Gates (Blocking)
 
-- Developer track workflow updated for module concept.
-- Knowledge-worker track workflow updated for module concept.
+- Developer track workflow is updated for the module concept.
+- Knowledge-worker track workflow is updated for the module concept.
 - `deltas/module-0X.md` exists for both tracks.
-- `MODULE_UPDATES.md` updated for both tracks.
+- Both `MODULE_UPDATES.md` files reference the module delta.
 - Module folder includes `MODULE_DONE_CHECKLIST.md` with PASS/FAIL
   decision recorded.
-- README links updated if module index or references changed.
+- README links are updated if module index or references changed.
 
 ## Validation
 
 - Markdown checks passed on changed files.
-- Link/path/internal reference checks completed.
+- Link/path/internal reference checks completed with
+  `python3 scripts/check_markdown_links.py .`.
+- Context duplication check completed with
+  `python3 scripts/check_context_duplication.py` when context files
+  change.
 - Validation results are recorded in `PROGRESS.md`.
 - `PROGRESS.md` records checkpoint decisions and pattern IDs for failed
   checkpoints.
